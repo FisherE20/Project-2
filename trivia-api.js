@@ -31,7 +31,7 @@ $("#cat3").on("click", function(event) {
     }).then(function(response) {
       console.log(response);
 
-    $('#question').text(response.trivia_categories[26].name)
+    $('#category3').text(response.trivia_categories[17].name)
   })
 })
 $("#cat4").on("click", function(event) {
@@ -43,7 +43,7 @@ $("#cat4").on("click", function(event) {
     }).then(function(response) {
       console.log(response);
 
-    $('#category3').text(response.trivia_categories[27].name)
+    $('#category4').text(response.trivia_categories[18].name)
   })
 })
 
@@ -63,16 +63,132 @@ $("#box1").on("click", function(event) {
 })
 $("#box2").on("click", function(event) {
   event.preventDefault();
-  let sports = 'https://opentdb.com/api.php?amount=20&category=11';
+  let film = 'https://opentdb.com/api.php?amount=20&category=16';
     $.ajax({
-      url: sports,
+      url: film,
       method: "GET"
   }).then(function(response) {
       console.log(response);
-    $('#question').text(response.results[1].question);
-    
-  
-
+    $('#question2').text(response.results[0].question);
   })
-      
 })
+$("#box3").on("click", function(event) {
+  event.preventDefault();
+  let celebrities = 'https://opentdb.com/api.php?amount=20&category=26';
+  $.ajax({
+    url: celebrities,
+    method: "GET"
+  }).then(function(response) {
+    console.log(response);
+  $('#question3').text(response.results[0].question)
+  })
+})
+$("#box4").on("click", function(event) {
+  event.preventDefault();
+  let animals = 'https://opentdb.com/api.php?amount=20&category=27';
+  $.ajax({
+    url: animals,
+    method: "GET"
+  }).then(function(response) {
+    console.log(response);
+  $('#question4').text(response.results[0].question)
+  })
+})
+
+$("#box5").on("click", function(event) {
+  event.preventDefault();
+  let film = 'https://opentdb.com/api.php?amount=20&category=11';
+  $.ajax({
+    url: film,
+    method: "GET"
+  }).then(function(response) {
+    console.log(response);
+  $('#question5').text(response.results[1].question)
+  })
+})
+$("#box6").on("click", function(event) {
+  event.preventDefault();
+  let celebrities = 'https://opentdb.com/api.php?amount=20&category=16';
+    $.ajax({
+      url: celebrities,
+      method: "GET"
+  }).then(function(response) {
+      console.log(response);
+    $('#question6').text(response.results[1].question);
+  })
+})
+
+$("#box7").on("click", function(event) {
+  event.preventDefault();
+  let celebrities = 'https://opentdb.com/api.php?amount=20&category=26';
+   $.ajax({
+    url: celebrities,
+    method: "GET"
+  }).then(function(response) {
+    console.log(response);
+
+    $('#question7').text(response.results[0].question)
+  })
+})
+$("#box8").on("click", function(event) {
+  event.preventDefault();
+let animals = 'https://opentdb.com/api.php?amount=20&category=27';
+  $.ajax({
+    url: animals,
+    method: "GET"
+  }).then(function(response) {
+    console.log(response);
+  $('#question8').text(response.results[0].question)
+  })
+})
+
+$("#box9").on("click", function(event) {
+  event.preventDefault();
+  let film = 'https://opentdb.com/api.php?amount=20&category=11';
+  $.ajax({
+    url: film,
+    method: "GET"
+  }).then(function(response) {
+    console.log(response);
+  $('#question9').text(response.results[3].question)
+  })
+})
+$("#box10").on("click", function(event) {
+  event.preventDefault();
+  let film = 'https://opentdb.com/api.php?amount=20&category=16';
+    $.ajax({
+      url: film,
+      method: "GET"
+  }).then(function(response) {
+      console.log(response);
+    $('#question10').text(response.results[2].question);
+  })
+})
+
+$("#box11").on("click", function(event) {
+  event.preventDefault();
+  let celebrities = 'https://opentdb.com/api.php?amount=50&category=26';
+  $.ajax({
+    url: celebrities,
+    method: "GET"
+  }).then(function(response) {
+    console.log(response);
+  $('#question11').text(response.results[3].question)
+  })
+})
+
+$("#box12").on("click", function(event) {
+  event.preventDefault();
+  let animals = 'https://opentdb.com/api.php?amount=20&category=27';
+  $.ajax({
+    url: animals,
+    method: "GET"
+  }).then(function(response) {
+    console.log(response);
+  $('#question12').text(response.results[3].question)
+  })
+})
+
+ 
+
+
