@@ -1,57 +1,78 @@
-// Start and Next buttons
-const start = document.getElementById("start_game");
-const next = document.getElementById("next");
-const restart = document.getElementById("restart");
-
-// Answer Grid
-let answerGrid = document.querySelector(".answer-grid");
-
-let box1 = document.querySelector("#box_1");
-let box2 = document.querySelector("#box_2");
-let box3 = document.querySelector("#box_3");
-let box4 = document.querySelector("#box_4");
-let box5 = document.querySelector("#box_5");
-let box6 = document.querySelector("#box_6");
-let box7 = document.querySelector("#box_7");
-let box8 = document.querySelector("#box_8");
-let box9 = document.querySelector("#box_9");
-let box10 = document.querySelector("#box_10");
-let box11 = document.querySelector("#box_11");
-let box12 = document.querySelector("#box_12");
-
-$(".start").on("click", function() {
-  // Here we are building the URL we need to query the database
-  const queryURL = "https://opentdb.com/api.php?amount=50";
-
-  // Here we run our AJAX call to the OpenTrvia API
-  $.ajax({
-    url: queryURL,
-    method: "GET",
-  })
-
-    // We store all of the retrieved data inside of an object called response
-    .then(function(response) {
-      // log the queryURL
-      console.log(queryURL);
-      // log the resulting object
+$("#cat1").on("click", function(event) {
+  event.preventDefault();
+  let cat_1 = 'https://opentdb.com/api_category.php';
+    $.ajax({
+      url: cat_1,
+      method: "GET"
+    }).then(function(response) {
       console.log(response);
-      console.log(category);
-    });
 
-  //push the questions into availableQuestions Array
+    $('#category1').text(response.trivia_categories[2].name)
+  })
+})
+$("#cat2").on("click", function(event) {
+  event.preventDefault();
+  let cat_2 = 'https://opentdb.com/api_category.php';
+    $.ajax({
+      url: cat_2,
+      method: "GET"
+    }).then(function(response) {
+      console.log(response);
 
-  // transfer content into html'
-  $("#cat1").html("<h2>" + response.results.category + "</h2>");
-  $(".question").text("<h3>" + response.results.question + "</h3>");
+    $('#category2').text(response.trivia_categories[16].name)
+  })
+})
+$("#cat3").on("click", function(event) {
+  event.preventDefault();
+  let cat_3 = 'https://opentdb.com/api_category.php';
+    $.ajax({
+      url: cat_3,
+      method: "GET"
+    }).then(function(response) {
+      console.log(response);
 
-  // nextButton.addEventListener("click", next);
-});
+    $('#question').text(response.trivia_categories[26].name)
+  })
+})
+$("#cat4").on("click", function(event) {
+  event.preventDefault();
+  let cat_4 = 'https://opentdb.com/api_category.php';
+    $.ajax({
+      url: cat_4,
+      method: "GET"
+    }).then(function(response) {
+      console.log(response);
 
-// Session Token
-// ("https://opentdb.com/api.php?amount=50&token=YOURTOKENHERE")
+    $('#category3').text(response.trivia_categories[27].name)
+  })
+})
 
-// Retrieve a Session Token
-// ("https://opentdb.com/api_token.php?command=request")
 
-// Reset a Session Token
-// ("https://opentdb.com/api_token.php?command=reset&token=YOURTOKENHERE")
+
+$("#box1").on("click", function(event) {
+  event.preventDefault();
+  let film = 'https://opentdb.com/api.php?amount=20&category=11';
+    $.ajax({
+      url: film,
+      method: "GET"
+    }).then(function(response) {
+      console.log(response);
+
+    $('#question').text(response.results[0].question)
+  })
+})
+$("#box2").on("click", function(event) {
+  event.preventDefault();
+  let sports = 'https://opentdb.com/api.php?amount=20&category=11';
+    $.ajax({
+      url: sports,
+      method: "GET"
+  }).then(function(response) {
+      console.log(response);
+    $('#question').text(response.results[1].question);
+    
+  
+
+  })
+      
+})
