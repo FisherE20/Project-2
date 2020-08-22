@@ -47,4 +47,10 @@ a:hover span.front {
 
 span.middle {}
 
-span.back {}
+span.back {
+    transform: rotateX(180deg) translateZ(20px);
+}
+
+a:hover span.front {
+    transform: rotateX(0deg) translateZ(20px);
+}
