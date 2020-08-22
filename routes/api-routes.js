@@ -22,7 +22,6 @@ module.exports = function(app) {
       email: req.body.email,
       password: req.body.password,
       // testing score field to post to database
-      score: 0
     })
       .then(() => {
         res.redirect(307, "/api/login");
@@ -52,4 +51,13 @@ module.exports = function(app) {
       });
     }
   });
+
+  app.get("/api/all", (req, res) => {
+    db.User.findAll(
+    {attributes: ['id', 'email']}
+    ).then(response => {
+      res.send(response)
+    })
+    
+  })
 };

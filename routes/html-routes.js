@@ -24,6 +24,6 @@ module.exports = function(app) {
   app.get("/members", isAuthenticated, (req, res) => {
 
     // this render is just a place holder to test the trivia handlebars page.
-    res.render("trivia");
+    res.render("players");
   });
 };
