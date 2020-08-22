@@ -205,7 +205,7 @@ $("#box10").on("click", function (event) {
 
 $("#box11").on("click", function (event) {
   event.preventDefault();
-  let celebrities = "https://opentdb.com/api.php?amount=50&category=26";
+  let celebrities = "https://opentdb.com/api.php?amount=20&category=26";
   $.ajax({
     url: celebrities,
     method: "GET",
