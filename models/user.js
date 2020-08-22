@@ -17,14 +17,17 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: false
     },
-
-    score: {
-      type: DataTypes.INTEGER,
-      allowNull: true
-      
-    }
   });
 
+  let Score = sequelize.define("High_Score",{
+    current_Score: {
+      type: DataTypes.INTEGER,
+    },
+
+    High_Score: {
+      type: DataTypes.INTEGER
+    }
+  })
 
   // Creating a custom method for our User model. This will check if an unhashed password entered by the user can be compared to the hashed password stored in our database
   User.prototype.validPassword = function(password) {
@@ -39,5 +42,7 @@ module.exports = function(sequelize, DataTypes) {
       null
     );
   });
-  return User;
+  
+  return User,Score;
+  
 };
