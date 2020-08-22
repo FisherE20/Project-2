@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="node_modules/medium-zoom/dist/medium-zoom.min.js"></script>
+
+    <title>zoomingImages</title>
+</head>
+
+<body>
+    <div class="gallery">
+        <img src="images\testImages\testZoom1.JPG" alt="" class="zoom">
+        <div class="flex">
+            <div>
+                <img src="images\testImages\testZoom2.JPG" alt="" class="zoom-dark">
+            </div>
+            <div>
+                <img src="images\testImages\testZoom3.JPG" alt="" class="zoom-scroll">
+            </div>
+            <div>
+                <img src="images\testImages\testZoom4.JPG" alt="" class="zoom-temp">
+            </div>
+        </div>
+
+    </div>
+
+    <template id="zoom-template">
+        <div>
+            <header>zoom image template</header>
+            <div id="zoom-container"></div>
+            <h2>Question: HERE!!!</h2>
+        </div>
+    </template>
+    <script src="node_modules/medium-zoom/dist/medium-zoom.min.js"></script>
+    <script src="/functions.js"></script>
+</body>
+
+
+</html>
