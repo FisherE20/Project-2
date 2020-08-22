@@ -234,3 +234,4 @@ $("#box12").on("click", function (event) {
     $("#btnD").text(response.results[2].incorrect_answers[2]);
   });
 });
+
