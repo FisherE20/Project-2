@@ -214,3 +214,17 @@ function scoreboard() {
     };
         
 }
+
+let score = 0; 
+document.getElementById("score-card")
+
+$("btn1").onclick = addScore;
+
+function addScore() {
+ document.getElementById(".score-card");
+  let newScore= score + 100;
+ 
+  // console.log(newScore);
+
+ $("#score-card").text(newScore);
+};
