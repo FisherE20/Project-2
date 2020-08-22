@@ -235,3 +235,22 @@ $("#box12").on("click", function (event) {
   });
 });
 
+let score=0 
+let score = document.getElementById("score-box").value;
+
+function scoreboard() {
+    if (questions.correct_answer === answer) {
+      count++;
+      score_box.innerHTML = count;
+
+      alert("Correct!");
+    }else {
+      if (count > 0) {
+        count --;
+      }
+
+      score_box.innerHTML = count;
+      alert("Wrong answer, Try Again")
+    };
+        
+}
