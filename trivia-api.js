@@ -216,15 +216,27 @@ function scoreboard() {
 }
 
 let score = 0; 
-document.getElementById("score-card")
 
-$("btn1").onclick = addScore;
+$(".btn2").on("click", (e) => {
+  
+  let value = e.target.getAttribute("data-value");
+  console.log(value);
+  // if correct_answer is selected increase score by the value
+  if (correct_answer == true) {
+    score += value;
+  } else {correct_ }
+  // // else decrease the score by the value
+  score -= value;
+  // // let new score increase or deacrease by the value
+  let newScore = score  ||  value;
+
+  $("#score-card").text(newScore);
+});
 
 function addScore() {
- document.getElementById(".score-card");
-  let newScore= score + 100;
- 
-  // console.log(newScore);
+  let value = value.getAttribute("data-value");
 
- $("#score-card").text(newScore);
-};
+  let newScore= score + value;
+
+  $("#score-card").text(newScore);
+}
