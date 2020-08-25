@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: darkgreen;
+}
+
+.scene {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    background: rgb(255, 127, 80);
+    border: 15px solid rgb(250, 225, 113);
+    border-radius: 50%;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+    animation: animateScene 5s linear infinite;
+}
+
+.scene:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .4);
+    z-index: 1;
+}
+
+.fa-question {
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    font-size: 20rem !important;
+    text-shadow: -10px 15px 10px rgba(0, 0, 0, .4);
+    animation: animateQuestion 2s linear infinite;
+    z-index: 1;
+}
+
+.drops {
+    position: absolute;
+    color: rgb(204, 204, 204);
+    animation: animateDrops 4s linear infinite;
+}
+
+.book {
+    left: 10%;
+    font-size: 4rem;
+    color: rgb(228, 24, 24);
+}
+
+.car {
+    left: 66%;
+    font-size: 6rem;
+    color: yellowgreen;
+}
+
+.flask {
+    left: 50%;
+    font-size: 3rem;
+    color: black;
+    animation-delay: -1.2s;
+}
+
+.bomb {
+    left: 33%;
+    font-size: 3rem;
+    color: white;
+    animation-delay: -0.8s;
+    z-index: 2;
+}
+
+.movie {
+    left: 46%;
+    font-size: 5rem;
+    color: red;
+    animation-delay: -1.0s;
+    z-index: 2;
+}
+
+.utensils {
+    left: 25%;
+    font-size: 7rem;
+    color: orange;
+    animation-delay: -3s;
+}
+
+.futbol {
+    left: 80%;
+    font-size: 2rem;
+    color: lightcyan;
+    animation-delay: -1s;
+}
+
+.phone {
+    left: 33%;
+    font-size: 7rem;
+    color: mediumorchid;
+    animation-delay: -2s;
+    z-index: 2;
+}
+
+@keyframes animateQuestion {
+    0% {
+        transform: translate(-50%, -50%) rotate(-45deg) translate(0, 0);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(-45deg) translate(-10px, 10px);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(-45deg) translate(0, 0);
+    }
+}
+
+@keyframes animateDrops {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(1000%);
+    }
+}
+
+@keyframes animateScene {
+    0% {
+        background: #46D1F2;
+    }
+    25% {
+        background: #49A3FC;
+    }
+    50% {
+        background: #3D26FC;
+    }
+    75% {
+        background: #4F6DE6;
+    }
+    100% {
+        background: #46D1F2;
+    }
+}
