@@ -8,8 +8,13 @@ module.exports = function(app) {
     if (req.user) {
       res.redirect("/members");
     }
-    res.render("signup");
+    res.render("home");
   });
+
+  app.get("/signup", (req, res) => {
+
+    res.render("signup")
+  })
 
   app.get("/login", (req, res) => {
     // If the user already has an account send them to the members page
@@ -24,6 +29,23 @@ module.exports = function(app) {
   app.get("/members", isAuthenticated, (req, res) => {
 
     // this render is just a place holder to test the trivia handlebars page.
-    res.render("players");
+    res.render("members");
   });
+
+  app.get("/trivia", (req, res) => {
+
+    if (!req.user) {
+      res.redirect("/login");
+    }
+    res.render("trivia")
+  })
+
+  // Highcore Html Route
+  app.get("/highscore", (req, res) => {
+
+    if (!req.user) {
+      res.redirect("/login");
+    }
+    res.render("highscore")
+  })
 };

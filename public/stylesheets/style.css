@@ -2,11 +2,11 @@ form.signup,
 form.login {
   margin-top: 50px;
 }
-body{
+/* body{
   background-color:black ;
   margin:0;
   padding: 0;
-}
+} */
 
 *{
   box-sizing: border-box;
