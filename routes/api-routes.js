@@ -60,4 +60,9 @@ module.exports = function(app) {
     })
     
   })
+
+  // route for number of players
+  app.get("/api/:id", (req, res) => {
+    
+  })
 };
