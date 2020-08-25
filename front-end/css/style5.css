@@ -45,12 +45,14 @@ a:hover span.front {
     transform: rotateX(-180deg) translateZ(20px);
 }
 
-span.middle {}
+span.middle {
+    background
+}
 
 span.back {
     transform: rotateX(180deg) translateZ(20px);
 }
 
-a:hover span.front {
+a:hover span.back {
     transform: rotateX(0deg) translateZ(20px);
 }
