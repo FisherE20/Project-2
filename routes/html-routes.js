@@ -7,7 +7,7 @@ module.exports = function(app) {
         if (req.user) {
             res.redirect("/members");
         }
-        res.render("signup");
+        res.render("home");
     });
 
     app.get("/login", (req, res) => {
