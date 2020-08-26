@@ -49,7 +49,7 @@ $("#cat4").on("click", function(event) {
 
 
 
-$(".card1").on("click", function(event) {
+$("#box1").on("click", function(event) {
   event.preventDefault();
   let film = 'https://opentdb.com/api.php?amount=20&category=11';
     $.ajax({
@@ -195,28 +195,51 @@ $("#box12").on("click", function(event) {
   })
 })
 
-let score = 0; 
+// scoring during the game
+let score = 300; 
 
-$(".btn2").on("click", (e) => {
+$(".answer").on("click", (e) => {
   
   let value = e.target.getAttribute("data-value");
-  console.log(value);
+  // console.log(value);
   // if correct_answer is selected increase score by the value
-  if (correct_answer == true) {
-    score += value;
-  } else {correct_ }
+  
   // // else decrease the score by the value
-  score -= value;
-  // // let new score increase or deacrease by the value
-  let newScore = score  ||  value;
 
-  $("#score-card").text(newScore);
+  // // let new score increase or deacrease by the value
+  let newScore = score + value;
+  // console.log(newScore);
+  $("#score-card").text(newScore); 
 });
 
-function addScore() {
-  let value = value.getAttribute("data-value");
 
-  let newScore= score + value;
+// final score 
 
-  $("#score-card").text(newScore);
+// function addScore() {
+// take players score and add it to the 
+// database and highscore HTML
+
+
+
+
+// Timer Function
+
+let seconds = 60;
+
+function startTimer() {
+  timer = setInterval(function () {
+    seconds--;
+    document.getElementById("seconds").innerText = seconds % 60;
+    document.getElementById("minutes").innerText = parseInt(seconds / 60);
+    if (seconds == 0 - 1) {
+      alert("Time Ran Out");
+      stopTimer();
+      console.log(timer);
+    $("#timer").text(timer);
+    }
+  }, 1000);
+}
+
+function stopTimer() {
+  clearInterval(timer);
 }
