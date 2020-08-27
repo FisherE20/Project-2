@@ -44,9 +44,8 @@ module.exports = function(app) {
         res.render("highscore", { style: "styleForm.css" })
     })
 
-    // // sign up Page
-    // app.get("/signup", (req,res) => {
-    //     res.render("signup")
-    // })
+    app.get("/how",(req,res) => {
+        res.render("howto")
+    })
 
 };
