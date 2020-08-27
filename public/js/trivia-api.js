@@ -224,22 +224,3 @@ $(".answer").on("click", (e) => {
 
 // Timer Function
 
-let seconds = 60;
-
-function startTimer() {
-  timer = setInterval(function () {
-    seconds--;
-    document.getElementById("seconds").innerText = seconds % 60;
-    document.getElementById("minutes").innerText = parseInt(seconds / 60);
-    if (seconds == 0 - 1) {
-      alert("Time Ran Out");
-      stopTimer();
-      console.log(timer);
-    $("#timer").text(timer);
-    }
-  }, 1000);
-}
-
-function stopTimer() {
-  clearInterval(timer);
-}
