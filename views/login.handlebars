@@ -1,30 +1,51 @@
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-      </div>
-    </div>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <h2>Login Form</h2>
-        <form class="login">
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="email-input" placeholder="Email">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="password-input" placeholder="Password">
-          </div>
-          <button type="submit" class="btn btn-default">Login</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleForm.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<!--form area start-->
+    <div class="form">
+        <!--login form start-->
+        <form class="login-form" action="" method="post">
+            <i class="fa fa-users"></i>
+            <input class="user-input" type="text" name="" placeholder="Username" required>
+            <input class="user-input" type="password" name="" placeholder="Password" required>
+            <div class="options-01">
+                <label class="remember-me"><input type="checkbox" name="">Remember me</label>
+                <a href="#">Forgot your password?</a>
+            </div>
+            <input class="btn" type="submit" sname="" value="LOGIN">
+            <div class="options-02">
+                <p>Not Registered? <a href="#">Create an Account</a></p>
+            </div>
         </form>
-        <br />
-        <p>Or sign up <a href="/signup">here</a></p>
-      </div>
+        <!--login form end-->
+        <!--signup form start-->
+        <form class="signup-form" action="" method="post">
+            <i class="fa fa-user-plus"></i>
+            <input class="user-input" type="text" name="" placeholder="Username" required>
+            <input class="user-input" type="email" name="" placeholder="Email Address" required>
+            <input class="user-input" type="password" name="" placeholder="Password" required>
+            <input class="btn" type="submit" name="" value="SIGN UP">
+            <div class="options-02">
+                <p>Already Registered? <a href="#">Sign In</a></p>
+            </div>
+        </form>
+        <!--signup form end-->
     </div>
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/login.js"></script>
+    <!--form area end-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+        $('.options-02 a').click(function() {
+            $('form').animate({
+                height: "toggle",
+                opacity: "toggle"
+            }, "slow");
+        });
+    </script>
