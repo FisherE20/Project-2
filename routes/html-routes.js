@@ -7,7 +7,7 @@ module.exports = function(app) {
         if (req.user) {
             res.redirect("/members");
         }
-        res.render("home", {css: '<link rel="stylesheet" href="stylesheet\style2.css"></link>'})
+        res.render("home")
     });
 
     app.get("/login", (req, res) => {
@@ -44,9 +44,9 @@ module.exports = function(app) {
         res.render("highscore", { style: "styleForm.css" })
     })
 
-    // sign up Page
-    app.get("/signup", (req,res) => {
-        res.render("signup")
-    })
+    // // sign up Page
+    // app.get("/signup", (req,res) => {
+    //     res.render("signup")
+    // })
 
 };
