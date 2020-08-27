@@ -1,285 +1,301 @@
 <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/logout">
-        Logout
-      </a>
-      <a class="navbar-brand" href="/login">
-        Main Menu
-      </a>
-      <a class="navbar-brand" href="/highscore">
-        High Scores
-      </a>
-    </div>
-  </div>
+<div class="container-fluid">
+<div class="navbar-header">
+<a class="navbar-brand" href="#"></a>
+<img src="favicon/favicon-32x32.png" width="30" height="30" alt="" loading="lazy" />
+<a class="navbar-brand" href="/logout">
+Logout
+</a>
+<a class="navbar-brand" href="/login">
+Main Menu
+</a>
+<a class="navbar-brand" href="/highscore">
+ High Scores
+</a>
+</div>
+</div>
 </nav>
 <div class="container">
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3">
-      <h2>Welcome <span class="member-name"></span> Your Score <span class="member-score"></span></h2>
-    </div>
-  </div>
+<div class="row">
+<div class="col-md-6 col-md-offset-3">
+<h2>Welcome <span class="member-name"></span> Your Score <span class="member-score"></span></h2>
+</div>
+</div>
 </div>
 
 <div class="container">
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3">
-      <h2>Start Game! <span class="member-name"></span></h2>
-    </div>
-    <div class="quiz_wrapper">
-      <div class="d-flex flex-column">
-        <div class="d-flex flex-column">
-          <button class="category" id="cat1"><span id="category1">Category 1</span></button>
-          <button class="category" id="cat2"><span id="category2">Category 2</span></button>
-          <button class="category" id="cat3"><span id="category3">Category 3</span></button>
-          <button class="category" id="cat4"><span id="category4">Category 4</span></button>
-        </div>
-      </div>
-      <div class="answer-grid">
-        <div row>
-          <div col4>
+<div class="row">
+<div class="col-md-6 col-md-offset-3">
+<h2>Start Game! <span class="member-name"></span></h2>
+</div>
+<div class="quiz_wrapper">
+<div class="d-flex flex-column">
+<div class="d-flex flex-column">
+<div class="card">
+<div class="face face1" id="cat1">
+<img src="images\cardIcons\cardicon1.JPG">
 
-            <div class="card">
-              <div class="face face1" id="box1">
-                <img src="images\cardIcons\cardicon1.JPG">
+<h1> Category </h1>
+</div>
+<div class="face face2">
+<div class="category">
+<p class="btn"><span id="category1"></span></p>
+<br>
+</div>
 
-                <h1> $100 </h1>
-              </div>
-              <div class="face face2">
-                <div class="question">
-                  <p class="btn" data-value="100"><span id="question"></span></p>
-                  <br>
-                  <button type="button" id="btn1" class="answer" data-value="100">A. {{answer1}}</button>
-                  <button type="button" id="btn2" class="answer" data-value="200">B. {{answer2}}</button>
-                  <button type="button" id="btn3" class="answer" data-value="300">C. {{answer3}}</button>
-                  <button type="button" id="btn4" class="answer" data-value="400">D. {{answer4}}</button>
-                </div>
+<div class="card">
+<div class="face face1" id="cat2">
+<img src="images\cardIcons\cardicon1.JPG">
 
+<h1> Category </h1>
+</div>
+<div class="face face2">
+<div class="category">
+<p class="btn"><span id="category2"></span></p>
+<br>
+</div>
 
-                <div class="card">
-                  <div class="face face1" id="box2">
-                    <img src="images\cardIcons\cardicon1.JPG">
+<div class="card">
+<div class="face face1" id="cat3">
+<img src="images\cardIcons\cardicon1.JPG">
 
-                    <h1> $200 </h1>
-                  </div>
-                  <div class="face face2">
-                    <div class="question">
-                      <p class="btn" data-value="100"><span id="question"></span></p>
-                      <br>
-                      <button type="button" id="btn1" class="answer" data-value="100">A. {{answer1}}</button>
-                      <button type="button" id="btn2" class="answer" data-value="200">B. {{answer2}}</button>
-                      <button type="button" id="btn3" class="answer" data-value="300">C. {{answer3}}</button>
-                      <button type="button" id="btn4" class="answer" data-value="400">D. {{answer4}}</button>
-                    </div>
+<h1> Category </h1>
+</div>
+<div class="face face2">
+<div class="category">
+<p class="btn"><span id="category3"></span></p>
+<br>
+</div>
 
-                    <div class="card">
-                      <div class="face face1" id="box3">
-                        <img src="images\cardIcons\cardicon1.JPG">
+<div class="card">
+<div class="face face1" id="cat4">
+<img src="images\cardIcons\cardicon1.JPG">
 
-                        <h1> $300 </h1>
-                      </div>
-                      <div class="face face2">
-                        <div class="question">
-                          <p class="btn" data-value="100"><span id="question"></span></p>
-                          <br>
-                          <button type="button" id="btn1" class="answer" data-value="100">A. {{answer1}}</button>
-                          <button type="button" id="btn2" class="answer" data-value="200">B. {{answer2}}</button>
-                          <button type="button" id="btn3" class="answer" data-value="300">C. {{answer3}}</button>
-                          <button type="button" id="btn4" class="answer" data-value="400">D. {{answer4}}</button>
-                        </div>
+<h1> Category </h1>
+</div>
+<div class="face face2">
+<div class="category">
+<p class="btn"><span id="category4"></span></p>
+<br>
+</div>
+</div>
+</div>
 
-                        <div class="card">
-                          <div class="face face1" id="box4">
-                            <img src="images\cardIcons\cardicon1.JPG">
+<div class="answer-grid">
+<div row>
+<div col4>
 
-                            <h1> $100 </h1>
-                          </div>
-                          <div class="face face2">
-                            <div class="question">
-                              <p class="btn" data-value="100"><span id="question"></span></p>
-                              <br>
-                              <button type="button" id="btn1" class="answer" data-value="100">A. {{answer1}}</button>
-                              <button type="button" id="btn2" class="answer" data-value="200">B. {{answer2}}</button>
-                              <button type="button" id="btn3" class="answer" data-value="300">C. {{answer3}}</button>
-                              <button type="button" id="btn4" class="answer" data-value="400">D. {{answer4}}</button>
-                            </div>
-                          </div>
-                        </div>
+<div class="card">
+<div class="face face1" id="box1" class="question" data-value="100">
+<img src="images\cardIcons\cardicon1.JPG">
 
-                        <div row2>
-                          <div col4>
-                            <div class="card">
-                              <div class="face face1" id="box5">
-                                <img src="images\cardIcons\cardicon1.JPG">
-
-                                <h1> $100 </h1>
-                              </div>
-                              <div class="face face2">
-                                <div class="question">
-                                  <p class="btn" data-value="100"><span id="question"></span></p>
-                                  <br>
-                                  <button type="button" id="btn1" class="answer" data-value="100">A.
-                                    {{answer1}}</button>
-                                  <button type="button" id="btn2" class="answer" data-value="200">B.
-                                    {{answer2}}</button>
-                                  <button type="button" id="btn3" class="answer" data-value="300">C.
-                                    {{answer3}}</button>
-                                  <button type="button" id="btn4" class="answer" data-value="400">D.
-                                    {{answer4}}</button>
-                                </div>
-
-                                <div class="card">
-                                  <div class="face face1" id="box6">
-                                    <img src="images\cardIcons\cardicon1.JPG">
-
-                                    <h1> $200 </h1>
-                                  </div>
-                                  <div class="face face2">
-                                    <div class="question">
-                                      <p class="btn" data-value="100"><span id="question"></span></p>
-                                      <br>
-                                      <button type="button" id="btn1" class="answer" data-value="100">A.
-                                        {{answer1}}</button>
-                                      <button type="button" id="btn2" class="answer" data-value="200">B.
-                                        {{answer2}}</button>
-                                      <button type="button" id="btn3" class="answer" data-value="300">C.
-                                        {{answer3}}</button>
-                                      <button type="button" id="btn4" class="answer" data-value="400">D.
-                                        {{answer4}}</button>
-                                    </div>
-
-                                    <div class="card">
-                                      <div class="face face1" id="box7">
-                                        <img src="images\cardIcons\cardicon1.JPG">
-
-                                        <h1> $300 </h1>
-                                      </div>
-                                      <div class="face face2">
-                                        <div class="question">
-                                          <p class="btn" data-value="100"><span id="question"></span></p>
-                                          <br>
-                                          <button type="button" id="btn1" class="answer" data-value="100">A.
-                                            {{answer1}}</button>
-                                          <button type="button" id="btn2" class="answer" data-value="200">B.
-                                            {{answer2}}</button>
-                                          <button type="button" id="btn3" class="answer" data-value="300">C.
-                                            {{answer3}}</button>
-                                          <button type="button" id="btn4" class="answer" data-value="400">D.
-                                            {{answer4}}</button>
-                                        </div>
-
-                                        <div class="card">
-                                          <div class="face face1" id="box8">
-                                            <img src="images\cardIcons\cardicon1.JPG">
-
-                                            <h1> $400 </h1>
-                                          </div>
-                                          <div class="face face2">
-                                            <div class="question">
-                                              <p class="btn" data-value="100"><span id="question"></span></p>
-                                              <br>
-                                              <button type="button" id="btn1" class="answer" data-value="100">A.
-                                                {{answer1}}</button>
-                                              <button type="button" id="btn2" class="answer" data-value="200">B.
-                                                {{answer2}}</button>
-                                              <button type="button" id="btn3" class="answer" data-value="300">C.
-                                                {{answer3}}</button>
-                                              <button type="button" id="btn4" class="answer" data-value="400">D.
-                                                {{answer4}}</button>
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                        <div row3>
-                                          <div col4>
-                                            <div class="card">
-                                              <div class="face face1" id="box9">
-                                                <img src="images\cardIcons\cardicon1.JPG">
-
-                                                <h1> $100 </h1>
-                                              </div>
-                                              <div class="face face2">
-                                                <div class="question">
-                                                  <p class="btn" data-value="100"><span id="question"></span></p>
-                                                  <br>
-                                                  <button type="button" id="btn1" class="answer" data-value="100">A.
-                                                    {{answer1}}</button>
-                                                  <button type="button" id="btn2" class="answer" data-value="200">B.
-                                                    {{answer2}}</button>
-                                                  <button type="button" id="btn3" class="answer" data-value="300">C.
-                                                    {{answer3}}</button>
-                                                  <button type="button" id="btn4" class="answer" data-value="400">D.
-                                                    {{answer4}}</button>
-                                                </div>
-
-                                                <div class="card">
-                                                  <div class="face face1" id="box10">
-                                                    <img src="images\cardIcons\cardicon1.JPG">
-
-                                                    <h1> $200 </h1>
-                                                  </div>
-                                                  <div class="face face2">
-                                                    <div class="question">
-                                                      <p class="btn" data-value="100"><span id="question"></span></p>
-                                                      <br>
-                                                      <button type="button" id="btn1" class="answer" data-value="100">A.
-                                                        {{answer1}}</button>
-                                                      <button type="button" id="btn2" class="answer" data-value="200">B.
-                                                        {{answer2}}</button>
-                                                      <button type="button" id="btn3" class="answer" data-value="300">C.
-                                                        {{answer3}}</button>
-                                                      <button type="button" id="btn4" class="answer" data-value="400">D.
-                                                        {{answer4}}</button>
-                                                    </div>
-
-                                                    <div class="card">
-                                                      <div class="face face1" id="box11">
-                                                        <img src="images\cardIcons\cardicon1.JPG">
-
-                                                        <h1> $300 </h1>
-                                                      </div>
-                                                      <div class="face face2">
-                                                        <div class="question">
-                                                          <p class="btn" data-value="100"><span id="question"></span>
-                                                          </p>
-                                                          <br>
-                                                          <button type="button" id="btn1" class="answer"
-                                                            data-value="100">A. {{answer1}}</button>
-                                                          <button type="button" id="btn2" class="answer"
-                                                            data-value="200">B. {{answer2}}</button>
-                                                          <button type="button" id="btn3" class="answer"
-                                                            data-value="300">C. {{answer3}}</button>
-                                                          <button type="button" id="btn4" class="answer"
-                                                            data-value="400">D. {{answer4}}</button>
-                                                        </div>
-
-                                                        <div class="card">
-                                                          <div class="face face1" id="box12">
-                                                            <img src="images\cardIcons\cardicon1.JPG">
-
-                                                            <h1> $400 </h1>
-                                                          </div>
-                                                          <div class="face face2">
-                                                            <div class="question">
-                                                              <p class="btn" data-value="100"><span
-                                                                  id="question"></span></p>
-                                                              <br>
-                                                              <button type="button" id="btn1" class="answer"
-                                                                data-value="100">A. {{answer1}}</button>
-                                                              <button type="button" id="btn2" class="answer"
-                                                                data-value="200">B. {{answer2}}</button>
-                                                              <button type="button" id="btn3" class="answer"
-                                                                data-value="300">C. {{answer3}}</button>
-                                                              <button type="button" id="btn4" class="answer"
-                                                                data-value="400">D. {{answer4}}</button>
-                                                            </div>
-                                                          </div>
-                                                        </div>
-
-                                                      </div>
+<h1> $100 </h1>
+</div>
+<div class="face face2">
+<div class="question">
+<p class="btn" data-value="100"><span id="question"></span></p>
+<br>
+<button type="button" id="btn1" class="answer" data-answer-type="incorrect">A.{{answer1}}</button>
+<button type="button" id="btn2" class="answer" data-answer-type="incorrect">B.{{answer2}}</button>
+<button type="button" id="btn3" class="answer" data-answer-type="correct"> C.{{answer3}}</button>
+<button type="button" id="btn4" class="answer" data-answer-type="incorrect">D.{{answer4}}</button>
+</div>
 
 
+<div class="card">
+<div class="face face1" id="box2" class="question" data-value="200">
+<img src="images\cardIcons\cardicon1.JPG">
 
-                                                      <script
-                                                        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-                                                      <script type="text/javascript" src="js/trivia-api.js"></script>
+<h1> $100 </h1>
+</div>
+<div class="face face2">
+<div class="question">
+<p class="btn" data-value="100"><span id="question"></span></p>
+<br>
+<button type="button" id="btn1" class="answer" data-value="200">A.{{answer1}}</button>
+<button type="button" id="btn2" class="answer" data-value="-200">B.{{answer2}}</button>
+<button type="button" id="btn3" class="answer" data-value="-200">C.{{answer3}}</button>
+<button type="button" id="btn4" class="answer" data-value="-200">D.{{answer4}}</button>
+</div>
+
+<div class="card">
+<div class="face face1" id="box3" class="question" data-value="300">
+<img src="images\cardIcons\cardicon1.JPG">
+
+<h1> $300 </h1>
+</div>
+<div class="face face2">
+<div class="question">
+<p class="btn" data-value="100"><span id="question"></span></p>
+<br>
+<button type="button" id="btn1" class="answer" data-value="-300">A.{{answer1}}</button>
+<button type="button" id="btn2" class="answer" data-value="-300">B.{{answer2}}</button>
+<button type="button" id="btn3" class="answer" data-value="300">C.{{answer3}}</button>
+<button type="button" id="btn4" class="answer" data-value="-300">D.{{answer4}}</button>
+</div>
+
+<div class="card">
+<div class="face face1" id="box4" class="question" data-value="400">
+<img src="images\cardIcons\cardicon1.JPG">
+
+<h1> $100 </h1>
+</div>
+<div class="face face2">
+<div class="question">
+ <p class="btn" data-value="100"><span id="question"></span></p>
+ <br>
+<button type="button" id="btn1" class="answer" data-value="-400">A.{{answer1}}</button>
+<button type="button" id="btn2" class="answer" data-value="-400">B.{{answer2}}</button>
+<button type="button" id="btn3" class="answer" data-value="-400">C.{{answer3}}</button>
+<button type="button" id="btn4" class="answer" data-value="400">D.{{answer4}}</button>
+</div>
+</div>
+</div>
+
+<div row2>
+<div col4>
+<div class="card">
+<div class="face face1" id="box5" class="question" data-value="100">
+<img src="images\cardIcons\cardicon1.JPG">
+
+<h1> $100 </h1>
+</div>
+<div class="face face2">
+<div class="question">
+<p class="btn" data-value="100"><span id="question"></span></p>
+<br>
+<button type="button" id="btn1" class="answer" data-value="-100">A.{{answer1}}</button>
+<button type="button" id="btn2" class="answer" data-value="100">B.{{answer2}}</button>
+<button type="button" id="btn3" class="answer" data-value="-100">C.{{answer3}}</button>
+<button type="button" id="btn4" class="answer" data-value="-100">D.{{answer4}}</button>
+</div>
+
+<div class="card">
+<div class="face face1" id="box6" class="question" data-value="200">
+<img src="images\cardIcons\cardicon1.JPG">
+
+<h1> $200 </h1>
+</div>
+<div class="face face2">
+<div class="question">
+<p class="btn" data-value="100"><span id="question"></span></p>
+<br>
+<button type="button" id="btn1" class="answer" data="-200">A.{{answer1}}</button>
+<button type="button" id="btn2" class="answer" data-value="-200">B.{{answer2}}</button>
+<button type="button" id="btn3" class="answer" data-value="-200">C.{{answer3}}</button>
+<button type="button" id="btn4" class="answer" data-value="200">D.{{answer4}}</button>
+</div>
+
+<div class="card">
+<div class="face face1" id="box7" class="question" data-value="300">
+<img src="images\cardIcons\cardicon1.JPG">
+
+<h1> $300 </h1>
+ </div>
+<div class="face face2">
+ <div class="question">
+<p class="btn" data-value="100"><span id="question"></span></p>
+<br>
+<button type="button" id="btn1" class="answer" data-value="-300">A. {{answer1}}</button>
+<button type="button" id="btn2" class="answer" data-value="-300">B. {{answer2}}</button>
+<button type="button" id="btn3" class="answer" data-value="300">C. {{answer3}}</button>
+<button type="button" id="btn4" class="answer" data-value="-300">D. {{answer4}}</button>
+</div>
+</div>
+</div>
+ 
+ <div class="card">
+ <div class="face face1" id="box8" class="question" data-value="400">
+<img src="images\cardIcons\cardicon1.JPG">
+
+<h1> $400 </h1>
+ </div>
+ <div class="face face2">
+ <div class="question">
+ <p class="btn" data-value="100"><span
+ id="question"></span></p>
+ <br>
+ <button type="button" id="btn1" class="answer" data-value="400">A.{{answer1}}</button>
+ <button type="button" id="btn2" class="answer" data-value="-400">B.{{answer2}}</button>
+ <button type="button" id="btn3" class="answer" data-value="-400">C.{{answer3}}</button>
+ <button type="button" id="btn4" class="answer" data-value="-400">D.{{answer4}}</button>
+  </div>
+ </div>
+</div>
+
+ <div row3>
+ <div col4>
+<div class="card">
+<div class="face face1" id="box9" class="question" data-value="100">
+<img src="images\cardIcons\cardicon1.JPG">
+
+<h1> $100 </h1>
+</div>
+<div class="face face2">
+<div class="question">
+<p class="btn" data-value="100"><span id="question"></span></p>
+<br>
+ <button type="button" id="btn1" class="answer" data-value="-100">A.{{answer1}}</button>
+<button type="button"  id="btn2" class="answer" data-value="-100">B.{{answer2}}</button>
+ <button type="button" id="btn3" class="answer" data-value="-100">C.{{answer3}}</button>
+ <button type="button" id="btn4" class="answer" data-value="100">D.{{answer4}}</button>
+  </div>
+
+<div class="card">
+ <div class="face face1" id="box10" class="question" data-value="200">
+<img src="images\cardIcons\cardicon1.JPG">
+
+<h1> $200 </h1>
+</div>
+<div class="face face2">
+<div class="question">
+<p class="btn" data-value="100"><span id="question"></span></p>
+<br>
+<button type="button" id="btn1" class="answer" data-value="-200">A.{{answer1}}</button>
+<button type="button" id="btn2" class="answer" data-value="200">B. {{answer2}}</button>
+<button type="button" id="btn3" class="answer" data-value="-200">C.{{answer3}}</button>
+<button type="button" id="btn4" class="answer" data-value="-200">D. {{answer4}}</button>
+</div>
+
+<div class="card">
+<div class="face face1" id="box11" class="question" data-value="300">
+<img src="images\cardIcons\cardicon1.JPG">
+
+<h1> $300 </h1>
+</div>
+<div class="face face2">
+<div class="question">
+<p class="btn" data-value="100"><span id="question"></span></p>
+<br>
+<button type="button" id="btn1" class="answer" data-value="-300">A. {{answer1}}</button>
+<button type="button" id="btn2" class="answer" data-value="-300">B. {{answer2}}</button>
+<button type="button" id="btn3" class="answer" data-value="-300">C. {{answer3}}</button>
+<button type="button" id="btn4" class="answer" data-value="300">D. {{answer4}}</button>
+</div>
+
+<div class="card">
+<div class="face face1" id="box12" class="question" data-vaule="400">
+  <img src="images\cardIcons\cardicon1.JPG">
+
+ <h1> $400 </h1>
+</div>
+<div class="face face2">
+<div class="question">
+<p class="btn" data-value="100"><span id="question"></span></p>
+<br>
+<button type="button" id="btn1" class="answer"  data-value="400">A.{{answer1}}</button>
+<button type="button" id="btn2" class="answer"  data-value="-400">B.{{answer2}}</button>
+<button type="button" id="btn3" class="answer"  data-value="-400">C.{{answer3}}</button>
+<button type="button" id="btn4" class="answer"  data-value="-400">D.{{answer4}}</button>
+</div>
+</div>
+</div>
+
+ </div>
+
+
+
+ <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script type="text/javascript"
+    src="js/trivia-api.js"></script>
