@@ -14,12 +14,12 @@
     position: relative;
     width: 20px;
     height: 20px;
-    background: rgb(141, 138, 138);
+    background: #111;
     float: left;
-    border: 1px solid rgba(48, 48, 49, 0.2);
+    border: 1px solid rgba(17, 17, 17, 0.1);
     box-sizing: border-box;
     overflow: hidden;
-    border-radius: 50%;
+    border-radius: 75%;
 }
 
 .container .box:before {
@@ -29,9 +29,9 @@
     left: 2px;
     right: 2px;
     bottom: 2px;
-    background: #1d1d1d;
-    box-shadow: 0 1px 4px #000;
-    transition: 1s ease-in-out;
+    background: #111;
+    box-shadow: 0 1px 4px #112;
+    transition: 2s ease-in-out;
 }
 
 .container .box:hover:before {
@@ -39,8 +39,8 @@
 }
 
 .container .box:nth-child(9n+1):hover:before {
-    background: #f00;
-    box-shadow: 0 0 3px #f00, 0 0 10px #f00;
+    background: #a09f9f;
+    box-shadow: 0 0 3px #a09f9f, 0 0 10px #a09f9f;
 }
 
 .container .box:nth-child(9n+2):hover:before {
@@ -54,8 +54,8 @@
 }
 
 .container .box:nth-child(9n+4):hover:before {
-    background: #ff0;
-    box-shadow: 0 0 3px #ff0, 0 0 10px #ff0;
+    background: #8707b9;
+    box-shadow: 0 0 3px #8707b9, 0 0 10px #8707b9;
 }
 
 .container .box:nth-child(9n+5):hover:before {
@@ -74,8 +74,8 @@
 }
 
 .container .box:nth-child(9n+8):hover:before {
-    background: #e91e63;
-    box-shadow: 0 0 3px #e91e63, 0 0 10px #e91e63;
+    background: #e94d1e;
+    box-shadow: 0 0 3px #e94d1e, 0 0 10px #e94d1e;
 }
 
 .container .box:nth-child(9n+9):hover:before {
