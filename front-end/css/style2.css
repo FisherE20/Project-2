@@ -9,8 +9,8 @@ body {
 
 .card {
     position: relative;
-    width: 21%;
-    height: 400px;
+    width: 250px;
+    height: 200px;
     flex-direction: column;
 }
 
@@ -24,7 +24,7 @@ body {
     align-items: center;
     flex-direction: column;
     font-family: 'Lato', sans-serif;
-    font-size: 24px;
+    font-size: 16px;
     color: seashell;
     padding: 5px;
 }

@@ -7,7 +7,7 @@ module.exports = function(app) {
         if (req.user) {
             res.redirect("/members");
         }
-        res.render("home");
+        res.render("home", {css: '<link rel="stylesheet" href="stylesheet\style2.css"></link>'})
     });
 
     app.get("/login", (req, res) => {
@@ -15,17 +15,18 @@ module.exports = function(app) {
         if (req.user) {
             res.redirect("/members");
         }
-        res.render("login");
+        res.render("login",);
     });
 
     // Here we've add our isAuthenticated middleware to this route.
     // If a user who is not logged in tries to access this route they will be redirected to the signup page
-    app.get("/members", isAuthenticated, (req, res) => {
+    app.get("/members", (req, res) => {
 
         // this render is just a place holder to test the trivia handlebars page.
         res.render("members");
     });
 
+    // Start Trivia Game
     app.get("/trivia", (req, res) => {
 
         if (!req.user) {
@@ -42,4 +43,10 @@ module.exports = function(app) {
         }
         res.render("highscore", { style: "styleForm.css" })
     })
+
+    // sign up Page
+    app.get("/signup", (req,res) => {
+        res.render("signup")
+    })
+
 };

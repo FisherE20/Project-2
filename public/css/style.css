@@ -3,11 +3,11 @@ form.login {
     margin-top: 50px;
 }
 
-/* body {
+body {
     background-color: black;
     margin: 0;
     padding: 0;
-} */
+}
 
 * {
     box-sizing: border-box;
@@ -21,8 +21,7 @@ h1 {
 }
 
 .quiz_wrapper {
-    height: 600px;
-    width: 1000px;
+    
     background-color: white;
     margin: 9px auto;
     border-radius: 8px;
@@ -59,7 +58,7 @@ h1 {
     background-color: cadetblue;
     width: 21%;
     margin: 14px;
-    padding: 38px;
+    padding: 40px;
     border-radius: 8px;
     margin-top: 25px;
     font-size: 15px;
@@ -82,7 +81,7 @@ h1 {
     background-color: cadetblue;
     width: 21%;
     margin: 14px;
-    padding: 38px;
+    padding: 40px;
     border-radius: 8px;
     margin-top: 25px;
     font-size: 15px;
@@ -105,7 +104,7 @@ h1 {
     background-color: cadetblue;
     width: 21%;
     margin: 14px;
-    padding: 38px;
+    padding: 40px;
     border-radius: 8px;
     margin-top: 25px;
     font-size: 15px;

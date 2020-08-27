@@ -21,17 +21,18 @@
         <div class="face face2">
             <div class="question">
                 <h5>Category: Movies</h5>
-                <p>Daniel Radcliff became a global star in the film industry due to his performance in which film fanchise?</p>
+                <p class="btn" id="box1" data-value="100"><span id="question"></span></p>
                 <br>
-                <button type="button" class="answers">A. {{answer1}}</button>
-                <button type="button" class="answers">B. {{answer2}</button>
-                <button type="button" class="answers">C. {{answer3}}</button>
-                <button type="button" class="answers">D. {{answer4}}</button>
+                <button type="button" id="btn1" class="answer" data-value="100">A. {{answer1}}</button>
+                <button type="button" id="btn2" class="answer" data-value="200">B. {{answer2}</button>
+                <button type="button" id="btn3" class="answer" data-value="300">C. {{answer3}}</button>
+                <button type="button" id="btn4" class="answer" data-value="400">D. {{answer4}}</button>
             </div>
         </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="..//public/js/trivia-api.js"></script>
 </body>
-<script src="node_modules/medium-zoom/dist/medium-zoom.min.js"></script>
-<script src="functions.js"></script>
 
 </html>
