@@ -17,6 +17,25 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: false
     },
+
+    username: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+      validate: {
+        isAlphanumeric: true
+      }
+    },
+
+    currentScore: {
+      type: DataTypes.INTEGER,
+      allowNull: true
+    },
+
+    highScore: {
+      type: DataTypes.INTEGER,
+      allowNull: true
+    }
   });
 
   // Creating a custom method for our User model. This will check if an unhashed password entered by the user can be compared to the hashed password stored in our database
@@ -33,11 +52,6 @@ module.exports = function(sequelize, DataTypes) {
     );
   });
   
-  // User.associate = models => {
-  //   User.hasMany(models.Players, {
-  //     onDelete: "cascade"
-  //   })
-  // }
   return User;
   
 };
