@@ -2,19 +2,19 @@ DROP DATABASE IF EXISTS passport_demo;
 
 CREATE DATABASE passport_demo;
 
-INSERT INTO passport_demo.questions (text, answer1, answer2, answer3, answer4, correctAnswer, CategoryId)
-VALUES ("Who painted the Mona Lisa", "Pablo Picasso", "Claude Monet", "Vincent van Gough", "Leonardo da Vinci", "Leonardo da Vinci", 25);
+INSERT INTO passport_demo.questions (question_field, answer1, answer2, answer3, answer4, correctAnswer, CategoryId, createdAt, updatedAt)
+VALUES ("Who painted the Mona Lisa", "Pablo Picasso", "Claude Monet", "Vincent van Gough", "Leonardo da Vinci", "Leonardo da Vinci", 25, 08/27/2020,08/27/2020);
 
-INSERT INTO passport_demo.questions (text, answer1, answer2, answer3, answer4, correctAnswer, CategoryId)
+INSERT INTO passport_demo.questions (question_field, answer1, answer2, answer3, answer4, correctAnswer, CategoryId)
 VALUES ("Painter Piet Mondrain (1827-1944) was part of what movement", "Neoplasticism", "Precisionism", "Cubism", "Impressionism", "Neoplasticism", 25);
 
-INSERT INTO passport_demo.questions (text, answer1, answer2, answer3, answer4, correctAnswer, CategoryId)
+INSERT INTO passport_demo.questions (question_field, answer1, answer2, answer3, answer4, correctAnswer, CategoryId)
 VALUES ("Which time signature is commonly known as Cut Time?", "4/4", "2/2", "6/8", "3/4", "2/2", 25);
 
-INSERT INTO passport_demo.questions (text, answer1, answer2, answer3, answer4, correctAnswer, CategoryId)
+INSERT INTO passport_demo.questions (question_field, answer1, answer2, answer3, answer4, correctAnswer, CategoryId)
 VALUES ("Who painted the Sistine Chapel?", "Michelangelo", "Leonardo da Vinci", "Pablo Picasso", "Raphael", "Michelangelo", 25);
 
-INSERT INTO passport_demo.questions (text, answer1, answer2, answer3, answer4, correctAnswer, CategoryId)
+INSERT INTO passport_demo.questions (question_field, answer1, answer2, answer3, answer4, correctAnswer, CategoryId)
 VALUES ("What French Sculptor designed the Statue of Liberty?", "Auguste Rodin", "Henri Matisse", "Auguste Bartholdi", "Jean-Baptiste Pigalle", "Auguste Bartholdi", 25);
 
 INSERT INTO passport_demo.questions (text, answer1, answer2, answer3, answer4, correctAnswer, CategoryId)
