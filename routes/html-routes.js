@@ -41,7 +41,7 @@ module.exports = function(app) {
         if (!req.user) {
             res.redirect("/login");
         }
-        res.render("highscore")
+        res.render("highscore", { style: "styleForm.css" })
     })
 
     app.get("/how",(req,res) => {

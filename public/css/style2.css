@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: #2f2f2f;
+    background: black;
 }
 
 .scene {
@@ -13,8 +13,8 @@ body {
     width: 400px;
     height: 400px;
     background: #3b93ff;
-    border: 20px solid rgb(245, 228, 152);
-    border-style: groove;
+    border: 20px solid #4c49df;
+    border-style: double;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
@@ -185,19 +185,19 @@ body {
 
 @keyframes animateScene {
     0% {
-        background: #f7a730;
+        background: #ecd4af;
     }
     25% {
         background: #7375d6;
     }
     50% {
-        background: #39ff64;
+        background: #bb21da;
     }
     75% {
-        background: #e763cb;
+        background: #fcbb2e;
     }
     100% {
-        background: #f7a730;
+        background: #ecd4af;
     }
 }
 
@@ -282,7 +282,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: rgb(131, 130, 130);
+    background: black;
 }
 
 a {

@@ -1,7 +1,11 @@
 {
     "development": {
         "username": "root",
-        "password": "F1shB0wl2020!",
+
+        
+
+       "password": "null",
+
         "database": "passport_demo",
         "port": 3306,
         "host": "127.0.0.1",
