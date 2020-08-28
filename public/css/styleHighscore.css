@@ -1,3 +1,5 @@
+/*animated background style*/
+
 * {
     margin: 0;
     padding: 0;
@@ -87,3 +89,6 @@
     background: #f45103;
     box-shadow: 0 0 3px #f45103, 0 0 10px #f45103;
 }
+
+
+/*mouse particle effects*/
