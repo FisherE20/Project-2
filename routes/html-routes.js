@@ -33,7 +33,7 @@ module.exports = function(app) {
             res.redirect("/login");
         }
 
-        res.render("trivia", obj)
+        res.render("trivia")
         
     })
 

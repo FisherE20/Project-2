@@ -69,4 +69,22 @@ else
 
 
 // Timer Function
+let seconds = 120;
 
+function startTimer() {
+  timer = setInterval(function () {
+    seconds--;
+    document.getElementById("seconds").innerText = seconds % 60;
+    document.getElementById("minutes").innerText = parseInt(seconds / 60);
+    if (seconds == 0 - 1) {
+      alert("Time Ran Out");
+      stopTimer();
+    }
+  }, 1000);
+}
+
+function stopTimer() {
+  clearInterval(timer);
+}
+
+startTimer();
