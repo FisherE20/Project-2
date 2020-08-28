@@ -6,7 +6,7 @@ module.exports = function (sequelize, DataTypes) {
         }
     });
 
-    let Answers = sequalize.define("Answers", {
+        Answers = sequalize.define("Answers", {
         answers: {
             text: DataTypes.TEXT,
             answer1: DataTypes.STRING,
