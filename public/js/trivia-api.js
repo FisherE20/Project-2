@@ -251,24 +251,6 @@ $("#box12").on("click", function(event) {
   })
 })
 
-
-
-// function categoryOne () {
-//   let cat_1 = 'https://opentdb.com/api_category.php';
-  
-//   $.ajax({
-//     url: cat_1,
-//     method: "GET"
-//   }).then(function(response) {
-//     console.log(response)
-//     console.log("this is the right log")
-  
-//   });
-
-// }
-
-// categoryOne ();
-
 // scoring during the game
 let score = 0; 
 

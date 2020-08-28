@@ -32,22 +32,8 @@ module.exports = function(app) {
         if (!req.user) {
             res.redirect("/login");
         }
-        
-        fetch('https://opentdb.com/api_category.php',{
-            method: 'GET'
-        }).then(response => response.json())
-        .then(data => {
 
-            let obj = {category : data}
-
-            res.render("trivia", obj)
-            
-            console.log(data)
-        })
-
-        
-        
-
+        res.render("trivia", obj)
         
     })
 
@@ -63,20 +49,6 @@ module.exports = function(app) {
     app.get("/how",(req,res) => {
         res.render("howto")
     })
-
-    // function categoryOne () {
-    //     let cat_1 = 'https://opentdb.com/api_category.php';
-        
-    //     $.ajax({
-    //       url: cat_1,
-    //       method: "GET"
-    //     }).then(function(response) {
-    //       console.log(response)
-    //       console.log("this is the right log")
-        
-    //     });
-      
-    // }
       
 
 };
