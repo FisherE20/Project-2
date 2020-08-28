@@ -1,27 +1,34 @@
 module.exports = function (sequelize, DataTypes) {
     let Questions = sequelize.define ("Questions", {
-        questions: {
-            types: DataTypes.STRING,
+        
+        question_field: {
+            type: DataTypes.STRING,
             allowNull: false
+        },
+
+        answer1: {
+            type:DataTypes.STRING
+        },
+        answer2: {
+            type:DataTypes.STRING
+        },
+        answer3: {
+            type:DataTypes.STRING
+        },
+        answer4: {
+            type:DataTypes.STRING
+        },
+        
+        correctAnswer: {
+            type:DataTypes.STRING
+        },
+
+        CategoryID: {
+            type:DataTypes.INTEGER,
+            allowNull: true
         }
     });
 
-    let Answers = sequalize.define("Answers", {
-        answers: {
-            text: DataTypes.TEXT,
-            answer1: DataTypes.STRING,
-            answer2: DataTypes.STRING,
-            answer3: DataTypes.STRING,
-            answer4: DataTypes.STRING,
-            correctAnswer: DataTypes.STRING,
-        }
-    });
-
-    Questions.associate = function(models) {
-        Questions.belogsTo(models.Category,{
-            foreignKey: {
-                allowNull:false
-            }
-        });
-    };
+    return Questions;
 };
+

@@ -2,9 +2,11 @@
     "development": {
         "username": "root",
 
-        
+        "password": "null",
 
-       "password": "null",
+
+      
+
 
         "database": "passport_demo",
         "port": 3306,

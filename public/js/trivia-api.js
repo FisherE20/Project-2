@@ -14,8 +14,7 @@ $("#card").on("hover", function(event) {
     $('#answer').text(response.results[0].incorrect_answers[2]);
     
   })
-    
-
+})
 
 // scoring during the game
 let score = 0; 

@@ -32,7 +32,9 @@ module.exports = function(app) {
         if (!req.user) {
             res.redirect("/login");
         }
-        res.render("trivia")
+
+        res.render("trivia", obj)
+        
     })
 
     // Highcore Html Route
@@ -47,5 +49,6 @@ module.exports = function(app) {
     app.get("/how",(req,res) => {
         res.render("howto")
     })
+      
 
 };
