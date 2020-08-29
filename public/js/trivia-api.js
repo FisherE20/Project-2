@@ -60,10 +60,13 @@ $("#box1").on("mouseover",function(event) {
       console.log(response);
 
     $('#question').text(response.results[0].question);
-    $('#btnA').text(response.results[0].incorrect_answers[0]);
-    $('#btnB').text(response.results[0].incorrect_answers[1]);
-    $('#btnC').text(response.results[0].correct_answer);
-    $('#btnD').text(response.results[0].incorrect_answers[2]);
+    $('#divA').text(response.results[0].incorrect_answers[0]);
+    $('#divB').text(response.results[0].incorrect_answers[1]);
+    $('#divC').text(response.results[0].correct_answer);
+    $('#divD').text(response.results[0].incorrect_answers[2]);
+
+    choice(response);
+
 
   })
 
@@ -79,10 +82,13 @@ $("#box2").on("mouseover", function(event) {
   }).then(function(response) {
       console.log(response);
     $('#question2').text(response.results[0].question);
-    $('#btnE').text(response.results[0].correct_answer);
-    $('#btnF').text(response.results[0].incorrect_answers[0]);
-    $('#btnG').text(response.results[0].incorrect_answers[1]);
-    $('#btnH').text(response.results[0].incorrect_answers[2]);
+    $('#divA').text(response.results[0].correct_answer);
+    $('#divB').text(response.results[0].incorrect_answers[0]);
+    $('#divC').text(response.results[0].incorrect_answers[1]);
+    $('#divD').text(response.results[0].incorrect_answers[2]);
+
+    choice(response);
+
   })
 });
 
@@ -95,10 +101,13 @@ $("#box3").on("mouseover", function(event) {
   }).then(function(response) {
     console.log(response);
     $('#question3').text(response.results[0].question);
-    $('#btnI').text(response.results[0].incorrect_answers[0]);
-    $('#btnJ').text(response.results[0].incorrect_answers[1]);
-    $('#btnK').text(response.results[0].correct_answer);
-    $('#btnL').text(response.results[0].incorrect_answers[2]);
+    $('#divA').text(response.results[0].incorrect_answers[0]);
+    $('#divB').text(response.results[0].incorrect_answers[1]);
+    $('#divC').text(response.results[0].correct_answer);
+    $('#divD').text(response.results[0].incorrect_answers[2]);
+
+    choice(response);
+
   })
 });
 
@@ -111,10 +120,13 @@ $("#box4").on("mouseover", function(event) {
   }).then(function(response) {
     console.log(response);
     $('#question4').text(response.results[0].question);
-    $('#btnM').text(response.results[0].incorrect_answers[0]);
-    $('#btnN').text(response.results[0].incorrect_answers[1]);
-    $('#btnO').text(response.results[0].incorrect_answers[2]);
-    $('#btnP').text(response.results[0].correct_answer);
+    $('#divA').text(response.results[0].incorrect_answers[0]);
+    $('#divB').text(response.results[0].incorrect_answers[1]);
+    $('#divC').text(response.results[0].incorrect_answers[2]);
+    $('#divD').text(response.results[0].correct_answer);
+
+    choice(response);
+
   })
 });
 
@@ -127,10 +139,13 @@ $("#box5").on("mouseover", function(event) {
   }).then(function(response) {
     console.log(response);
     $('#question5').text(response.results[1].question);
-    $('#btnQ').text(response.results[0].incorrect_answers[0]);
-    $('#btnR').text(response.results[0].correct_answer);
-    $('#btnS').text(response.results[0].incorrect_answers[1]);
-    $('#btnT').text(response.results[0].incorrect_answers[2]);
+    $('#divA').text(response.results[0].incorrect_answers[0]);
+    $('#divB').text(response.results[0].correct_answer);
+    $('#divC').text(response.results[0].incorrect_answers[1]);
+    $('#divD').text(response.results[0].incorrect_answers[2]);
+
+    choice(response);
+
   })
 });
 
@@ -143,10 +158,13 @@ $("#box6").on("mouseover", function(event) {
   }).then(function(response) {
       console.log(response);
     $('#question6').text(response.results[1].question);
-    $('#btnU').text(response.results[0].incorrect_answers[0]);
-    $('#btnV').text(response.results[0].incorrect_answers[1]);
-    $('#btnW').text(response.results[0].incorrect_answers[2]);
-    $('#btnX').text(response.results[0].correct_answer);
+    $('#divA').text(response.results[0].incorrect_answers[0]);
+    $('#divB').text(response.results[0].incorrect_answers[1]);
+    $('#divC').text(response.results[0].incorrect_answers[2]);
+    $('#divD').text(response.results[0].correct_answer);
+
+    choice(response);
+
   })
 });
 
@@ -162,10 +180,13 @@ $("#box7").on("mouseover", function(event) {
     console.log(response);
 
     $('#question7').text(response.results[0].question);
-    $('#btnY').text(response.results[0].incorrect_answers[0]);
-    $('#btnZ').text(response.results[0].incorrect_answers[1]);
-    $('#btnAA').text(response.results[0].correct_answer);
-    $('#btnBB').text(response.results[0].incorrect_answers[2]);
+    $('#divA').text(response.results[0].incorrect_answers[0]);
+    $('#divB').text(response.results[0].incorrect_answers[1]);
+    $('#divC').text(response.results[0].correct_answer);
+    $('#divD').text(response.results[0].incorrect_answers[2]);
+
+    choice(response);
+
   })
 });
 
@@ -178,10 +199,13 @@ let animals = 'https://opentdb.com/api.php?amount=20&category=17&type=multiple';
   }).then(function(response) {
     console.log(response);
     $('#question8').text(response.results[0].question);
-    $('#btnCC').text(response.results[0].correct_answer);
-    $('#btnDD').text(response.results[0].incorrect_answers[0]);
-    $('#btnEE').text(response.results[0].incorrect_answers[1]);
-    $('#btnFF').text(response.results[0].incorrect_answers[2]);
+    $('#divA').text(response.results[0].correct_answer);
+    $('#divB').text(response.results[0].incorrect_answers[0]);
+    $('#divC').text(response.results[0].incorrect_answers[1]);
+    $('#divD').text(response.results[0].incorrect_answers[2]);
+
+    choice(response);
+
   })
 });
 
@@ -194,10 +218,13 @@ $("#box9").on("mouseover", function(event) {
   }).then(function(response) {
     console.log(response);
     $('#question9').text(response.results[3].question);
-    $('#btnGG').text(response.results[0].incorrect_answers[0]);
-    $('#btnHH').text(response.results[0].incorrect_answers[1]);
-    $('#btnII').text(response.results[0].incorrect_answers[2]);
-    $('#btnJJ').text(response.results[0].correct_answer);
+    $('#divA').text(response.results[0].incorrect_answers[0]);
+    $('#divB').text(response.results[0].incorrect_answers[1]);
+    $('#divC').text(response.results[0].incorrect_answers[2]);
+    $('#divD').text(response.results[0].correct_answer);
+
+    choice(response);
+
   })
 });
 
@@ -210,10 +237,13 @@ $("#box10").on("mouseover", function(event) {
   }).then(function(response) {
       console.log(response);
     $('#question10').text(response.results[2].question);
-    $('#btnKK').text(response.results[0].incorrect_answers[0]);
-    $('#btnLL').text(response.results[0].correct_answer);
-    $('#btnMM').text(response.results[0].incorrect_answers[1]);
-    $('#btnNN').text(response.results[0].incorrect_answers[2]);
+    $('#divA').text(response.results[0].incorrect_answers[0]);
+    $('#divB').text(response.results[0].correct_answer);
+    $('#divC').text(response.results[0].incorrect_answers[1]);
+    $('#divD').text(response.results[0].incorrect_answers[2]);
+
+    choice(response);
+
   })
  });
 
@@ -226,11 +256,12 @@ $("#box11").on("mouseover", function(event) {
   }).then(function(response) {
     console.log(response);
     $("#question11").text(response.results[3].question);
-    $('#btnOO').text(response.results[0].incorrect_answers[0]);
-    $('#btnPP').text(response.results[0].incorrect_answers[1]);
-    $('#btnQQ').text(response.results[0].incorrect_answers[2]);
-    $('#btnRR').text(response.results[0].correct_answer);
-    
+    $('#divA').text(response.results[0].incorrect_answers[0]);
+    $('#divB').text(response.results[0].incorrect_answers[1]);
+    $('#divC').text(response.results[0].incorrect_answers[2]);
+    $('#divD').text(response.results[0].correct_answer);
+
+    choice(response);
 
   })
 });
@@ -243,70 +274,52 @@ $("#box12").on("mouseover", function(event) {
     method: "GET"
   }).then(function(response) {
     console.log(response);
+
     $('#question12').text(response.results[3].question);
-    $('#btnSS').text(response.results[0].correct_answer);
-    $('#btnTT').text(response.results[0].incorrect_answers[0]);
-    $('#btnUU').text(response.results[0].incorrect_answers[1]);
-    $('#btnVV').text(response.results[0].incorrect_answers[2]);
-    let score = 0;
-    let answer= response.results[0].correct_answer;
+    $('#divA').text(response.results[0].correct_answer);
+    $('#divB').text(response.results[0].incorrect_answers[0]);
+    $('#divC').text(response.results[0].incorrect_answers[1]);
+    $('#divD').text(response.results[0].incorrect_answers[2]);
 
-    // when you click on the face card 2 you will get the point value
-    // can you add another on click to the answer button with a data attribute
-    //  of correct or incorect
-    $(".btn").on("click", (e) => {
-  
-  let value = e.target.getAttribute("data-value");
-   console.log(value);
+    choice(response);
 
-   if (answer.correct === answer)
-  {
-    //score = score + value;
-    score++;
-    alert("Correct");
-    document.getElementById("score") = score + value;
-}
-else
-{   
-    //score = score - value;
-    score--;
-    alert("Incorrect");
-    document.getElementById("score") = score - value;
-    
-}
-
-});
-
-   
   });
 });
 
-// // scoring
-//  let score = 0;
-//  let answer= correct_answer;
+// GLOBAL SCORE
+let score = 0;
 
-// // when you click on the face card 2 you will get the point value
-// // can you add another on click to the answer button with a data attribute
-// //  of correct or incorect
-// $(".btn").on("click", (e) => {
+function choice (response) {
+  let answer= response.results[0].correct_answer;
+  console.log(answer)
   
-//   let value = e.target.getAttribute("data-value");
-//    console.log(value);
+  $(".btn").on("click", (e) => {
 
-//    if (answer.correct === answer)
-//   {
-//     //score = score + value;
-//     score++;
-//     alert("Correct");
-//     document.getElementById("score") = score + value;
-// }
-// else
-// {   
-//     //score = score - value;
-//     score--;
-//     alert("Incorrect");
-//     document.getElementById("score") = score - value;
+
+    let choices = $(".choices").text()
+
+    // let rightChoice = choices.match(answer)
+    // console.log(rightChoice)
+    // let thisOne = rightChoice
+    // console.log(thisOne + "this is the new one ")
+    let value = e.target.getAttribute("data-value");
+      console.log(value);
     
-// }
-
-// });
+    if (choices != answer)
+     {
+        //score = score + value;
+        score++;
+        alert("Correct");
+        document.getElementById("score") = score + value;
+      }
+      else
+      {   
+        //score = score - value;
+        score--;
+        alert("Incorrect");
+        document.getElementById("score") = score - value;
+        
+      }
+      console.log(score);
+    })
+}
