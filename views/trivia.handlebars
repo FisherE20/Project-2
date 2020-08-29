@@ -7,28 +7,18 @@
     <title>triviaPage</title>
 </head>
 
-
 <div class="container shadow">
-    <!--timeDisplay-->
-    <div class="timerDisplay">
-        <span>score</span>
-    </div>
     <!-- coloumn1-->
     <div class="row">
 
             <!-- card1-->
             <div class="card">
-                <div class="face face1">
+                <div class="face face1" id="cat1">
                     <img src="images/cardIcons/cardicon1.JPG">
                 </div>
                 <div class="face face2">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus.</p>
-                    <div class="answers">
-                        <button>David Dawkins</button>
-                        <button>11/59/03</button>
-                        <button>Not Another Teen Movie</button>
-                        <button>lizards</button>
-                    </div>
+                    <h1 id="category1" style="color: white;"></h1>
+                    
                 </div>
             </div>
             <!-- card2-->
@@ -36,13 +26,13 @@
                 <div class="face face1">
                     <img src="images/cardIcons/cardicon1.JPG">
                 </div>
-                <div class="face face2">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus.</p>
+                <div class="face face2" id="box1">
+                    <p><span id="question" style="color: white;"></span></p>
                     <div class="answers">
-                        <button>Lord Of The Rings</button>
-                        <button>horses</button>
-                        <button>Mr. T</button>
-                        <button>$1,255,072.00</button>
+                        <button class="incorrect">A</button>
+                        <button class="incorrect">B</button>
+                        <button class="correct">C</button>
+                        <button class="incorrect">D</button>
                     </div>
                 </div>
             </div>
@@ -51,13 +41,13 @@
                 <div class="face face1">
                     <img src="images/cardIcons/cardicon1.JPG">
                 </div>
-                <div class="face face2">
-                    <p>Aenean id augue quis ante pharetra aliquam in at turpis.</p>
+                <div class="face face2" id="box2">
+                    <p><span id="question2" style="color: white;"></span></p>
                     <div class="answers">
-                        <button>Pikachu</button>
-                        <button>Playstation 5</button>
-                        <button>November 20, 2020</button>
-                        <button>All the Above</button>
+                        <button class="correct">A</button>
+                        <button class="incorrect">B</button>
+                        <button class="incorrect">C</button>
+                        <button class="incorrect">D</button>
                     </div>
                 </div>
             </div>
@@ -66,13 +56,13 @@
                 <div class="face face1">
                     <img src="images/cardIcons/cardicon1.JPG">
                 </div>
-                <div class="face face2">
-                    <p>Nam lacinia vitae risus ac cursus. Sed vestibulum pharetra ex sed aliquet.</p>
+                <div class="face face2" id="box3">
+                    <p><span id="question3" style="color: white;"></span></p>
                     <div class="answers">
-                        <button>January 20, 1990</button>
-                        <button>November 20, 1859</button>
-                        <button>April 1, 1957</button>
-                        <button>September 11, 2020</button>
+                        <button class="incorrect">A</button>
+                        <button class="incorrect">B</button>
+                        <button class="correct">C</button>
+                        <button class="incorrect">D</button>
                     </div>
                 </div>
             </div>
@@ -82,17 +72,11 @@
     <div class="row">
             <!-- card1-->
             <div class="card">
-                <div class="face face1">
+                <div class="face face1" id="cat2">
                     <img src="images/cardIcons/cardicon2.JPG">
                 </div>
                 <div class="face face2">
-                    <p>Proin eget tortor blandit, tincidunt nisi et, consectetur odio.</p>
-                    <div class="answers">
-                        <button>{{Answer:A}}</button>
-                        <button>{{Answer:B}}</button>
-                        <button>{{Answer:C}}</button>
-                        <button>{{Answer:D}}</button>
-                    </div>
+                    <h1 id="category2" style="color: white;"></h1>
                 </div>
             </div>
             <!-- card2-->
@@ -100,30 +84,28 @@
                 <div class="face face1">
                     <img src="images/cardIcons/cardicon2.JPG">
                 </div>
-                <div class="face face2">
-                    <h3>Question Content</h3>
-                    <p>Question</p>
+                <div class="face face2" id="box4">
+                    <p><span id="question4" style="color: white;"></span></p>
                     <div class="answers">
-                        <button>{{Answer:A}}</button>
-                        <button>{{Answer:B}}</button>
-                        <button>{{Answer:C}}</button>
-                        <button>{{Answer:D}}</button>
+                        <button class="incorrect">A</button>
+                        <button class="incorrect">B</button>
+                        <button class="incorrect">C</button>
+                        <button class="correct">D</button>
                     </div>
                 </div>
             </div>
             <!-- card3-->
             <div class="card">
-                <div class="face face1">
+                <div class="face face1" >
                     <img src="images/cardIcons/cardicon2.JPG">
                 </div>
-                <div class="face face2">
-                    <h3>Question Content</h3>
-                    <p>Question</p>
+                <div class="face face2" id="box5">
+                    <p><span id="question5" style="color: white;"></span></p>
                     <div class="answers">
-                        <button>{{Answer:A}}</button>
-                        <button>{{Answer:B}}</button>
-                        <button>{{Answer:C}}</button>
-                        <button>{{Answer:D}}</button>
+                        <button class="incorrect">A</button>
+                        <button class="correct">B</button>
+                        <button class="incorrect">C</button>
+                        <button class="incorrect">D</button>
                     </div>
                 </div>
             </div>
@@ -132,14 +114,13 @@
                 <div class="face face1">
                     <img src="images/cardIcons/cardicon2.JPG">
                 </div>
-                <div class="face face2">
-                    <h3>Question Content</h3>
-                    <p>Question</p>
+                <div class="face face2" id="box6">
+                    <p><span id="question6" style="color: white;"></span></p>
                     <div class="answers">
-                        <button>{{Answer:A}}</button>
-                        <button>{{Answer:B}}</button>
-                        <button>{{Answer:C}}</button>
-                        <button>{{Answer:D}}</button>
+                        <button class="incorrect">A</button>
+                        <button class="incorrect">B</button>
+                        <button class="incorrect">C</button>
+                        <button class="correct">D</button>
                     </div>
                 </div>
             </div>
@@ -148,18 +129,11 @@
     <div class="row">
           <!-- card1-->
             <div class="card">
-                <div class="face face1">
+                <div class="face face1" id="cat3">
                     <img src="images/cardIcons/cardicon3.JPG">
                 </div>
                 <div class="face face2">
-                    <h3>Question Content</h3>
-                    <p>Question</p>
-                    <div class="answers">
-                        <button>{{Answer:A}}</button>
-                        <button>{{Answer:B}}</button>
-                        <button>{{Answer:C}}</button>
-                        <button>{{Answer:D}}</button>
-                    </div>
+                <h1 id="category3" style="color: white;"></h1>
                 </div>
             </div>
             <!-- card2-->
@@ -167,14 +141,13 @@
                 <div class="face face1">
                     <img src="images/cardIcons/cardicon3.JPG">
                 </div>
-                <div class="face face2">
-                    <h3>Question Content</h3>
-                    <p>Question</p>
+                <div class="face face2" id="box7">
+                    <p><span id="question7" style="color: white;"></span></p>
                     <div class="answers">
-                        <button>{{Answer:A}}</button>
-                        <button>{{Answer:B}}</button>
-                        <button>{{Answer:C}}</button>
-                        <button>{{Answer:D}}</button>
+                        <button class="incorrect">A</button>
+                        <button class="incorrect">B</button>
+                        <button class="correct">C</button>
+                        <button class="incorrect">D</button>
                     </div>
                 </div>
             </div>
@@ -183,14 +156,13 @@
                 <div class="face face1">
                     <img src="images/cardIcons/cardicon3.JPG">
                 </div>
-                <div class="face face2">
-                    <h3>Question Content</h3>
-                    <p>Question</p>
+                <div class="face face2" id="box8">
+                    <p><span id="question8" style="color: white;"></span></p>
                     <div class="answers">
-                        <button>{{Answer:A}}</button>
-                        <button>{{Answer:B}}</button>
-                        <button>{{Answer:C}}</button>
-                        <button>{{Answer:D}}</button>
+                        <button class="correct">A</button>
+                        <button class="incorrect">B</button>
+                        <button class="incorrect">C</button>
+                        <button class="incorrect">D</button>
                     </div>
                 </div>
             </div>
@@ -199,14 +171,13 @@
                 <div class="face face1">
                     <img src="images/cardIcons/cardicon3.JPG">
                 </div>
-                <div class="face face2">
-                    <h3>Question Content</h3>
-                    <p>Question</p>
+                <div class="face face2" id="box9">
+                    <p><span id="question9" style="color: white;"></span></p>
                     <div class="answers">
-                        <button>{{Answer:A}}</button>
-                        <button>{{Answer:B}}</button>
-                        <button>{{Answer:C}}</button>
-                        <button>{{Answer:D}}</button>
+                        <button class="incorrect">A</button>
+                        <button class="incorrect">B</button>
+                        <button class="incorrect">C</button>
+                        <button class="correct">D</button>
                     </div>
                 </div>
             </div>
@@ -215,17 +186,12 @@
     <div class="row">
           <!-- card1-->
             <div class="card">
-                <div class="face face1">
+                <div class="face face1" id="cat4">
                     <img src="images/cardIcons/cardicon1.JPG">
                 </div>
                 <div class="face face2">
-                    <p>Vivamus nec libero nec nisi aliquam egestas ut vitae orci.</p>
-                    <div class="answers">
-                        <button>{{Answer:A}}</button>
-                        <button>{{Answer:B}}</button>
-                        <button>{{Answer:C}}</button>
-                        <button>{{Answer:D}}</button>
-                    </div>
+                    <h1 id="category4" style="color: white;"></h1>
+                    
                 </div>
             </div>
 
@@ -234,13 +200,13 @@
                 <div class="face face1">
                     <img src="images/cardIcons/cardicon1.JPG">
                 </div>
-                <div class="face face2">
-                    <p>Donec sollicitudin, mauris pretium pellentesque porta, mauris enim suscipit arcu, eu commodo urna ligula sed orci.</p>
+                <div class="face face2" id="box10">
+                    <p><span id="question10" style="color: white;"></span></p>
                     <div class="answers">
-                        <button>{{Answer:A}}</button>
-                        <button>{{Answer:B}}</button>
-                        <button>{{Answer:C}}</button>
-                        <button>{{Answer:D}}</button>
+                        <button class="incorrect">A</button>
+                        <button class="correct">B</button>
+                        <button class="incorrect">C</button>
+                        <button class="incorrect">D</button>
                     </div>
                 </div>
             </div>
@@ -249,13 +215,13 @@
                 <div class="face face1">
                     <img src="images/cardIcons/cardicon1.JPG">
                 </div>
-                <div class="face face2">
-                    <p>Nullam velit lorem, tristique vel cursus sed, convallis et lacus.</p>
+                <div class="face face2" id="box11">
+                    <p><span id="question11" style="color: white;"></span></p>
                     <div class="answers">
-                        <button>{{Answer:A}}</button>
-                        <button>{{Answer:B}}</button>
-                        <button>{{Answer:C}}</button>
-                        <button>{{Answer:D}}</button>
+                        <button class="incorrect">A</button>
+                        <button class="incorrect">B</button>
+                        <button class="incorrect">C</button>
+                        <button class="correct">D</button>
                     </div>
                 </div>
             </div>
@@ -264,39 +230,41 @@
                 <div class="face face1">
                     <img src="images/cardIcons/cardicon1.JPG">
                 </div>
-                <div class="face face2">
-                    <p> Aliquam molestie justo sit amet lectus accumsan, sed blandit libero finibus.</p>
+                <div class="face face2" id="box12">
+                    <p><span id="question12" style="color: white;"></span></p>
                     <div class="answers">
-                        <button>{{Answer:A}}</button>
-                        <button>{{Answer:B}}</button>
-                        <button>{{Answer:C}}</button>
-                        <button>{{Answer:D}}</button>
+                        <button class="correct">A</button>
+                        <button class="incorrect">B</button>
+                        <button class="incorrect">C</button>
+                        <button class="incorrect">D</button>
                     </div>
                 </div>
             </div>
     </div>
     <div class="extra row">
     <div class="scoreDisplay">
-        <span>score</span>
+        <span>score: <span id="score"></span>
     </div>
     
     <!--answerDisplay-->
-    <div class="answerDisplay">
-        <ol>
-            <li>A:</li>
-            <li>B:</li>
-            <li>C:</li>
-            <li>D:</li>
-        </ol>
+    <div class="container-sm">
+        <ul>
+            <li class="answers" >A:<span id="divA" ></span></li>
+            <li class="answers" >B:<span id="divB" ></span></li>
+            <li class="answers" >C:<span id="divC" ></span></li>
+            <li class="answers" >D:<span id="divD" ></span></li>
+        </ul>
     </div>
     </div>
+
+    {{!-- added navigator buttons --}}
+    <nav>
+    <a href="/members"><strong>Home</strong></a>
+    <hr>
+    <a href="/logout"><strong>Logout</strong></a>
+</nav>
 </div>
+</nav>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="/js/trivia-api.js"></script>
 
-   
-
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <!-- changed the source since i am using a new folder for testing -->
-  <script type="text/javascript" src="js/trivia-api.js"></script>
