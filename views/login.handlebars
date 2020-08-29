@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styleForm.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<!--form area start-->
+    <div class="form">
+        <!--login form start-->
+        <form class="login login-form">
+            <i class="fa fa-users"></i>
+            <input class="user-input" id="emaillogin-input" type="email" name="" placeholder="Email" required>
+            <input class="user-input" id="passwordlogin-input" type="password" name="" placeholder="Password" required>
+            <div class="options-01">
+                <label class="remember-me"><input type="checkbox" name="">Remember me</label>
+            </div>
+            <input class="btn" type="submit" sname="" value="LOGIN">
+            <div class="options-02">
+                <p>Not Registered? <a href="#">Create an Account</a></p>
+            </div>
+        </form>
+        <!--login form end-->
+        <!--signup form start-->
+        <form class="signup signup-form">
+            <i class="fa fa-user-plus"></i>
+            <input class="user-input" id="emailsignup-input" type="email" name="" placeholder="Email Address" required>
+            <input class="user-input" id="passwordsignup-input" type="password" name="" placeholder="Password" required>
+            <input class="user-input" id="username-input" type="text" name="" placeholder="Username" required>
+            <input class="btn" type="submit" value="SIGN UP">
+            <div class="options-02">
+                <p>Already Registered? <a href="#">Sign In</a></p>
+            </div>
+            <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span> <span class="msg"></span>
+          </div>
+        </form>
+        <!--signup form end-->
+    </div>
+    <!--form area end-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+        $('.options-02 a').click(function() {
+            $('form').animate({
+                height: "toggle",
+                opacity: "toggle"
+            }, "slow");
+        });
+    </script>
+    <script type="text/javascript" src="js/signup.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+    

@@ -1,0 +1,353 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: black;
+}
+
+.scene {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background: #3b93ff;
+    border: 20px solid #4c49df;
+    border-style: double;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+    animation: animateScene 5s linear infinite;
+}
+
+.scene:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.fa-question {
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%, -50%) rotateX(-45deg);
+    color: #fff;
+    font-size: 10rem !important;
+    animation: animateQuestion .2s linear infinite;
+    text-shadow: -10px 15px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.drops {
+    position: absolute;
+    color: #ccc;
+    animation: animateDrops 3s linear infinite;
+}
+
+.book {
+    left: 10%;
+    font-size: 4rem;
+}
+
+.flask {
+    left: 50%;
+    font-size: 3rem;
+}
+
+.bomb {
+    left: 75%;
+    font-size: 5rem;
+    animation-delay: 1s;
+    z-index: 2;
+}
+
+.music {
+    right: 63%;
+    font-size: 4rem;
+    animation-delay: 1.5s;
+}
+
+.futbol {
+    right: 20%;
+    font-size: 3rem;
+    animation-delay: 1s;
+    z-index: 2;
+}
+
+.basketball {
+    right: 20%;
+    font-size: 4rem;
+    animation-delay: -0.8s;
+}
+
+.mobile {
+    right: 36%;
+    font-size: 5rem;
+    animation-delay: -0.6s;
+    z-index: 2;
+}
+
+.tv {
+    right: 50%;
+    font-size: 4rem;
+    animation-delay: -2s;
+}
+
+.globe {
+    left: 47%;
+    font-size: 3rem;
+    animation-delay: -1s;
+    z-index: 1;
+}
+
+.letters {
+    position: absolute;
+    color: #ccc;
+    animation: animateLetters 5s linear infinite;
+}
+
+.t {
+    left: 10%;
+    font-size: 4rem;
+    color: orangered;
+}
+
+.r {
+    left: 10%;
+    top: 15%;
+    font-size: 4rem;
+    color: orangered;
+}
+
+.i {
+    left: 10%;
+    top: 25%;
+    font-size: 4rem;
+    color: orangered;
+}
+
+.v {
+    left: 10%;
+    top: 40%;
+    font-size: 4rem;
+    color: orangered;
+}
+
+.y {
+    left: 10%;
+    top: 55%;
+    font-size: 4rem;
+    color: orangered;
+}
+
+.a {
+    left: 10%;
+    top: 70%;
+    font-size: 4rem;
+    color: orangered;
+}
+
+@keyframes animateQuestion {
+    0% {
+        transform: translate(-50%, -50%) rotate(-45deg) translate(0, 0);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(-45deg) translate(-5px, -5px);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(-45deg) translate(0, 0);
+    }
+}
+
+@keyframes animateDrops {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(1100%);
+    }
+}
+
+@keyframes animateLetters {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(2000%);
+    }
+}
+
+@keyframes animateScene {
+    0% {
+        background: #ecd4af;
+    }
+    25% {
+        background: #7375d6;
+    }
+    50% {
+        background: #bb21da;
+    }
+    75% {
+        background: #fcbb2e;
+    }
+    100% {
+        background: #ecd4af;
+    }
+}
+
+
+/*buttons*/
+
+
+/*
+.buttons {
+    top: 100%;
+}
+
+.buttons>a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transform-origin: center center;
+}
+
+.buttons>span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    border-radius: 30px;
+    text-transform: uppercase;
+    color: olivedrab;
+    transition: 1s;
+}
+
+.buttons>span.front {
+    transform: rotateX(0deg) translateZ(20px);
+}
+
+.buttons>a:hover span.front {
+    transform: rotateX(-180deg) translateZ(20px);
+}
+
+.buttons>span.middle {
+    background: linear-gradient(to left, rgb(195, 26, 91), rgb(113, 41, 189));
+}
+
+.buttons>span.back {
+    transform: rotateX(180deg) translateZ(20px);
+}
+
+.buttons>a:hover span.back {
+    transform: rotateX(0deg) translateZ(20px);
+}
+
+.buttons>span.middle:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgb(255, 221, 31), rgb(195, 26, 91));
+    transform: translateZ(-1px);
+    border-radius: 30px;
+}
+
+.buttons>a:hover span.middle {
+    transform: rotateX(-180deg) translateZ(0px);
+}
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: black;
+}
+
+a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transform-origin: center center;
+}
+
+#playButton span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    border-radius: 30px;
+    text-transform: uppercase;
+    color: olivedrab;
+    transition: 1s;
+}
+
+span.front {
+    transform: rotateX(0deg) translateZ(20px);
+}
+
+a:hover span.front {
+    transform: rotateX(-180deg) translateZ(20px);
+}
+
+span.middle {
+    background: linear-gradient(to left, rgb(195, 26, 91), rgb(113, 41, 189));
+}
+
+span.back {
+    transform: rotateX(180deg) translateZ(20px);
+}
+
+a:hover span.back {
+    transform: rotateX(0deg) translateZ(20px);
+}
+
+span.middle:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgb(255, 221, 31), rgb(195, 26, 91));
+    transform: translateZ(-1px);
+    border-radius: 30px;
+}
+
+a:hover span.middle {
+    transform: rotateX(-180deg) translateZ(0px);
+}

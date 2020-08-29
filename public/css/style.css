@@ -1,0 +1,179 @@
+form.signup,
+form.login {
+    margin-top: 50px;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin: 30px 0px -15px;
+}
+
+.quiz_wrapper {
+    
+    background-color: white;
+    margin: 9px auto;
+    border-radius: 8px;
+    padding: 30px;
+    flex-direction: row;
+}
+
+.quiz_wrapper .category {
+    padding: 30px;
+    margin: 16px;
+    background-color: #cbd6ae;
+    border-radius: 8px;
+    color: black;
+    font-size: 20px;
+    float: left;
+    width: 21%;
+}
+
+.quiz_wrapper .options {
+    float: left;
+    width: 100%;
+}
+
+.quiz_wrapper .btn1 {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 21%
+}
+
+.quiz_wrapper .btn1 {
+    display: inline-block;
+    background-color: cadetblue;
+    width: 21%;
+    margin: 14px;
+    padding: 40px;
+    border-radius: 8px;
+    margin-top: 25px;
+    font-size: 15px;
+    color: white;
+    box-shadow: 0px 3px 0px coral;
+    cursor: pointer;
+    outline: none;
+}
+
+.quiz_wrapper .btn2 {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 21%
+}
+
+.quiz_wrapper .btn2 {
+    display: inline-block;
+    background-color: cadetblue;
+    width: 21%;
+    margin: 14px;
+    padding: 40px;
+    border-radius: 8px;
+    margin-top: 25px;
+    font-size: 15px;
+    color: white;
+    box-shadow: 0px 3px 0px coral;
+    cursor: pointer;
+    outline: none;
+}
+
+.quiz_wrapper .btn3 {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 21%
+}
+
+.quiz_wrapper .btn3 {
+    display: inline-block;
+    background-color: cadetblue;
+    width: 21%;
+    margin: 14px;
+    padding: 40px;
+    border-radius: 8px;
+    margin-top: 25px;
+    font-size: 15px;
+    color: white;
+    box-shadow: 0px 3px 0px coral;
+    cursor: pointer;
+    outline: none;
+}
+
+.quiz_wrapper .btn:active {
+    box-shadow: 0px 0px 0px transparent;
+}
+
+.quiz_wrapper .btn.correct {
+    background-color: chartreuse;
+    box-shadow: 0px 3px 0px green;
+}
+
+.quiz_wrapper .btn.wrong {
+    background-color: red;
+    box-shadow: 0px 3px 0px rgb(44, 1, 1);
+}
+
+.quiz_wrapper .hide {
+    display: none;
+}
+
+.quiz_wrapper .score {
+    float: left;
+    width: 100%;
+    padding: 25px 0px;
+}
+
+.quiz_wrapper .score .start {
+    width: 40%;
+    float: left;
+}
+
+.quiz_wrapper .score .next {
+    width: 40%;
+    float: left;
+}
+
+.quiz_wrapper .score .start button {
+    padding: 15px 70px;
+    color: white;
+    background-color: #bb8bb4;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0px 3px 0px#9e8957;
+    outline: none;
+}
+
+.quiz_wrapper .score .next button {
+    padding: 15px 70px;
+    color: white;
+    background-color: #bb8bb4;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0px 3px 0px#9e8957;
+    outline: none;
+}
+
+.quiz_wrapper .score .start button:active {
+    box-shadow: 0px 3px 0px transparent;
+}
+
+.quiz_wrapper .score .next button:active {
+    box-shadow: 0px 3px 0px transparent;
+}

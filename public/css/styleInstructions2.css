@@ -1,0 +1,75 @@
+/*instructionCard Stlye*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+}
+
+.container {
+    font-family: 'Special Elite', cursive;
+    margin: 20px;
+    padding: 10px;
+}
+
+.card {
+    position: relative;
+    margin: auto 0;
+    width: 400px;
+    height: 300px;
+    transform-style: preserve-3d;
+}
+
+.card .face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: 1.5s ease-in-out;
+    transform: perspective(500px) rotateY(0deg);
+}
+
+.card .face h3 {
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    transform: perspective(500px) translateZ(75px);
+}
+
+.card .face h4 {
+    display: flex;
+    flex: content;
+}
+
+.card .face.front {
+    background: purple;
+}
+
+.card:hover .face.front {
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card .face.back {
+    padding: 10px;
+    background: slategrey;
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card:hover .face.back {
+    transform: perspective(500px) rotateY(360deg);
+}

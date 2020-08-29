@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
+
+    <title>swappingCards</title>
+</head>
+
+<body>
+    <!--basic card transition attempt-->
+    <div class="card">
+        <div class="face face1">
+            <img src="images\cardIcons\cardicon1.JPG">
+
+            <h1> $100 </h1>
+        </div>
+        <div class="face face2">
+            <div class="question">
+                <h5>Category: Movies</h5>
+                <p class="btn" id="box1" data-value="100"><span id="question"></span></p>
+                <br>
+                <button type="button" id="btn1" class="answer" data-value="100">A. {{answer1}}</button>
+                <button type="button" id="btn2" class="answer" data-value="200">B. {{answer2}</button>
+                <button type="button" id="btn3" class="answer" data-value="300">C. {{answer3}}</button>
+                <button type="button" id="btn4" class="answer" data-value="400">D. {{answer4}}</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="..//public/js/trivia-api.js"></script>
+</body>
+
+</html>

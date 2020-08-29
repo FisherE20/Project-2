@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #838282;
+}
+
+a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+a:hover {
+  /*&.front {
+                        transform: rotateX(-180deg) translateZ(20px);
+                    }
+                    &.back {
+                        transform: rotateX(0deg) translateZ(20px);
+                    }
+                    &.middle {
+                        transform: rotateX(-180deg) translateZ(0px);
+                    }*/
+}
+
+a:hover span.front {
+  -webkit-transform: rotateX(-180deg) translateZ(20px);
+          transform: rotateX(-180deg) translateZ(20px);
+}
+
+a:hover span.middle {
+  -webkit-transform: rotateX(-180deg) translateZ(0px);
+          transform: rotateX(-180deg) translateZ(0px);
+}
+
+a:hover span.back {
+  -webkit-transform: rotateX(0deg) translateZ(20px);
+          transform: rotateX(0deg) translateZ(20px);
+}
+
+span {
+  position: absolute;
+  top: -200px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+  line-height: 60px;
+  font-size: 24px;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 30px;
+  text-transform: uppercase;
+  color: olivedrab;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+span.front {
+  -webkit-transform: rotateX(0deg) translateZ(20px);
+          transform: rotateX(0deg) translateZ(20px);
+}
+
+span.middle {
+  background: -webkit-gradient(linear, right top, left top, from(#c31a5b), to(#7129bd));
+  background: linear-gradient(to left, #c31a5b, #7129bd);
+}
+
+span.middle:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, right top, left top, from(#ffdd1f), to(#c31a5b));
+  background: linear-gradient(to left, #ffdd1f, #c31a5b);
+  -webkit-transform: translateZ(-1px);
+          transform: translateZ(-1px);
+  border-radius: 30px;
+}
+
+span.back {
+  -webkit-transform: rotateX(180deg) translateZ(20px);
+          transform: rotateX(180deg) translateZ(20px);
+}
+/*# sourceMappingURL=style1.css.map */
