@@ -9,8 +9,8 @@ body {
 
 .card {
     position: relative;
-    width: 250px;
-    height: 200px;
+    width: 150px;
+    height: 175px;
     flex-direction: column;
 }
 

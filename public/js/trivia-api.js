@@ -66,6 +66,7 @@ $("#box1").on("mouseover",function(event) {
     $('#btnD').text(response.results[0].incorrect_answers[2]);
 
   })
+
     
 });
 
@@ -148,6 +149,8 @@ $("#box6").on("mouseover", function(event) {
     $('#btnX').text(response.results[0].correct_answer);
   })
 });
+
+
 
 $("#box7").on("mouseover", function(event) {
   event.preventDefault();
@@ -276,5 +279,3 @@ else
 
 });
 
-
-  

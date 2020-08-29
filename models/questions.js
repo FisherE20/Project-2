@@ -6,6 +6,7 @@ module.exports = function (sequelize, DataTypes) {
             allowNull: false
         },
 
+
         answer1: {
             type:DataTypes.STRING
         },
@@ -23,6 +24,7 @@ module.exports = function (sequelize, DataTypes) {
             type:DataTypes.STRING
         },
 
+
         CategoryID: {
             type:DataTypes.INTEGER,
             allowNull: true
@@ -30,4 +32,7 @@ module.exports = function (sequelize, DataTypes) {
     });
 
     return Questions;
+
 };
+
+
