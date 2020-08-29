@@ -1,72 +1,332 @@
-$("#card").on("hover", function(event) {
+$("#cat1").on("mouseover", function(event) {
   event.preventDefault();
-  let random = 'https://opentdb.com/api.php?amount=20&category=11&type=multiple';
+  let sports = 'https://opentdb.com/api_category.php';
     $.ajax({
-      url: random,
+      url: sports,
       method: "GET"
     }).then(function(response) {
       console.log(response);
-    $('#category').text(response.trivia_categories[0].name)
-    $('#question').text(response.results[0].question);
-    $('#answer').text(response.results[0].incorrect_answers[0]);
-    $('#answer').text(response.results[0].incorrect_answers[1]);
-    $('#answer').text(response.results[0].correct_answer);
-    $('#answer').text(response.results[0].incorrect_answers[2]);
-    
+
+    $('#category1').text(response.trivia_categories[12].name)
   })
-})
+});
+$("#cat2").on("mouseover", function(event) {
+  event.preventDefault();
+  let celebrities = 'https://opentdb.com/api_category.php';
+    $.ajax({
+      url: celebrities,
+      method: "GET"
+    }).then(function(response) {
+      console.log(response);
 
-// scoring during the game
-let score = 0; 
-
-// check for correct answer
-let btn1 = 1;
-let btn2 = 2;
-let btn3 = 3;
-let btn4 = 4; 
-
-// when you click on the face card 2 you will get the point value
-// can you add another on click to the answer button with a data attribute
-//  of correct or incorect
-$(".question").on("click", (e) => {
-  
-  let value = e.target.getAttribute("data-value");
-   console.log(value);
-  
-
+    $('#category2').text(response.trivia_categories[17].name)
+  })
 });
 
-$(".answer").on("click", (e) => {
-  let answer = e.target.getAttribute("data-value");
-  console.log(answer);
-  if (answer.corret === answer)
-  {
-    //score = score + value;
-    score++;
-    alert("Correct");
-    document.getElementById("score") = score + value;
-}
-else
-{   
-    //score = score - value;
-    score--;
-    alert("Incorrect");
-    document.getElementById("score") = score - value;
-}
+$("#cat3").on("mouseover", function(event) {
+  event.preventDefault();
+  let scienceNature = 'https://opentdb.com/api_category.php';
+    $.ajax({
+      url: scienceNature,
+      method: "GET"
+    }).then(function(response) {
+      console.log(response);
 
-  let newScore = score + value;
-    // console.log(newScore);
+    $('#category3').text(response.trivia_categories[8].name)
+  })
+});
+
+$("#cat4").on("mouseover", function(event) {
+  event.preventDefault();
+  let mythology = 'https://opentdb.com/api_category.php';
+    $.ajax({
+      url: mythology,
+      method: "GET"
+    }).then(function(response) {
+      console.log(response);
+
+    $('#category4').text(response.trivia_categories[11].name)
+  })
+});
+
+
+$("#box1").on("mouseover",function(event) {
+  event.preventDefault();
+  let sports = 'https://opentdb.com/api.php?amount=20&category=21&type=multiple';
+    $.ajax({
+      url: sports,
+      method: "GET"
+    }).then(function(response) {
+      console.log(response);
+
+    $('#question').text(response.results[0].question);
+    $('#divA').text(response.results[0].incorrect_answers[0]);
+    $('#divB').text(response.results[0].incorrect_answers[1]);
+    $('#divC').text(response.results[0].correct_answer);
+    $('#divD').text(response.results[0].incorrect_answers[2]);
+
+    choice(response);
+
+
+  })
+
     
-    $("#score-card").text(newScore); 
-})
-// final score 
+});
 
-// function addScore() {
-// take players score and add it to the 
-// database and highscore HTML
+$("#box2").on("mouseover", function(event) {
+  event.preventDefault();
+  let film = 'https://opentdb.com/api.php?amount=20&category=21&type=multiple';
+    $.ajax({
+      url: film,
+      method: "GET"
+  }).then(function(response) {
+      console.log(response);
+    $('#question2').text(response.results[0].question);
+    $('#divA').text(response.results[0].correct_answer);
+    $('#divB').text(response.results[0].incorrect_answers[0]);
+    $('#divC').text(response.results[0].incorrect_answers[1]);
+    $('#divD').text(response.results[0].incorrect_answers[2]);
+
+    choice(response);
+
+  })
+});
+
+$("#box3").on("mouseover", function(event) {
+  event.preventDefault();
+  let celebrities = 'https://opentdb.com/api.php?amount=20&category=21&type=multiple';
+  $.ajax({
+    url: celebrities,
+    method: "GET"
+  }).then(function(response) {
+    console.log(response);
+    $('#question3').text(response.results[0].question);
+    $('#divA').text(response.results[0].incorrect_answers[0]);
+    $('#divB').text(response.results[0].incorrect_answers[1]);
+    $('#divC').text(response.results[0].correct_answer);
+    $('#divD').text(response.results[0].incorrect_answers[2]);
+
+    choice(response);
+
+  })
+});
+
+$("#box4").on("mouseover", function(event) {
+  event.preventDefault();
+  let animals = 'https://opentdb.com/api.php?amount=20&category=26&type=multiple';
+  $.ajax({
+    url: animals,
+    method: "GET"
+  }).then(function(response) {
+    console.log(response);
+    $('#question4').text(response.results[0].question);
+    $('#divA').text(response.results[0].incorrect_answers[0]);
+    $('#divB').text(response.results[0].incorrect_answers[1]);
+    $('#divC').text(response.results[0].incorrect_answers[2]);
+    $('#divD').text(response.results[0].correct_answer);
+
+    choice(response);
+
+  })
+});
+
+$("#box5").on("mouseover", function(event) {
+  event.preventDefault();
+  let film = 'https://opentdb.com/api.php?amount=20&category=26&type=multiple';
+  $.ajax({
+    url: film,
+    method: "GET"
+  }).then(function(response) {
+    console.log(response);
+    $('#question5').text(response.results[1].question);
+    $('#divA').text(response.results[0].incorrect_answers[0]);
+    $('#divB').text(response.results[0].correct_answer);
+    $('#divC').text(response.results[0].incorrect_answers[1]);
+    $('#divD').text(response.results[0].incorrect_answers[2]);
+
+    choice(response);
+
+  })
+});
+
+$("#box6").on("mouseover", function(event) {
+  event.preventDefault();
+  let celebrities = 'https://opentdb.com/api.php?amount=20&category=26&type=multiple';
+    $.ajax({
+      url: celebrities,
+      method: "GET"
+  }).then(function(response) {
+      console.log(response);
+    $('#question6').text(response.results[1].question);
+    $('#divA').text(response.results[0].incorrect_answers[0]);
+    $('#divB').text(response.results[0].incorrect_answers[1]);
+    $('#divC').text(response.results[0].incorrect_answers[2]);
+    $('#divD').text(response.results[0].correct_answer);
+
+    choice(response);
+
+  })
+});
 
 
 
+$("#box7").on("mouseover", function(event) {
+  event.preventDefault();
+  let celebrities = 'https://opentdb.com/api.php?amount=20&category=17&type=multiple';
+   $.ajax({
+    url: celebrities,
+    method: "GET"
+  }).then(function(response) {
+    console.log(response);
 
-// Timer Function
+    $('#question7').text(response.results[0].question);
+    $('#divA').text(response.results[0].incorrect_answers[0]);
+    $('#divB').text(response.results[0].incorrect_answers[1]);
+    $('#divC').text(response.results[0].correct_answer);
+    $('#divD').text(response.results[0].incorrect_answers[2]);
 
+    choice(response);
+
+  })
+});
+
+$("#box8").on("mouseover", function(event) {
+  event.preventDefault();
+let animals = 'https://opentdb.com/api.php?amount=20&category=17&type=multiple';
+  $.ajax({
+    url: animals,
+    method: "GET"
+  }).then(function(response) {
+    console.log(response);
+    $('#question8').text(response.results[0].question);
+    $('#divA').text(response.results[0].correct_answer);
+    $('#divB').text(response.results[0].incorrect_answers[0]);
+    $('#divC').text(response.results[0].incorrect_answers[1]);
+    $('#divD').text(response.results[0].incorrect_answers[2]);
+
+    choice(response);
+
+  })
+});
+
+$("#box9").on("mouseover", function(event) {
+  event.preventDefault();
+  let film = 'https://opentdb.com/api.php?amount=20&category=17&type=multiple';
+  $.ajax({
+    url: film,
+    method: "GET"
+  }).then(function(response) {
+    console.log(response);
+    $('#question9').text(response.results[3].question);
+    $('#divA').text(response.results[0].incorrect_answers[0]);
+    $('#divB').text(response.results[0].incorrect_answers[1]);
+    $('#divC').text(response.results[0].incorrect_answers[2]);
+    $('#divD').text(response.results[0].correct_answer);
+
+    choice(response);
+
+  })
+});
+
+$("#box10").on("mouseover", function(event) {
+  event.preventDefault();
+  let film = 'https://opentdb.com/api.php?amount=20&category=20&type=multiple';
+    $.ajax({
+      url: film,
+      method: "GET"
+  }).then(function(response) {
+      console.log(response);
+    $('#question10').text(response.results[2].question);
+    $('#divA').text(response.results[0].incorrect_answers[0]);
+    $('#divB').text(response.results[0].correct_answer);
+    $('#divC').text(response.results[0].incorrect_answers[1]);
+    $('#divD').text(response.results[0].incorrect_answers[2]);
+
+    choice(response);
+
+  })
+});
+
+$("#box11").on("mouseover", function(event) {
+  event.preventDefault();
+  let celebrities ='https://opentdb.com/api.php?amount=20&category=20&type=multiple';
+  $.ajax({
+    url: celebrities,
+    method: "GET"
+  }).then(function(response) {
+    console.log(response);
+    $("#question11").text(response.results[3].question);
+    $('#divA').text(response.results[0].incorrect_answers[0]);
+    $('#divB').text(response.results[0].incorrect_answers[1]);
+    $('#divC').text(response.results[0].incorrect_answers[2]);
+    $('#divD').text(response.results[0].correct_answer);
+
+    choice(response);
+
+  })
+});
+
+$("#box12").on("mouseover", function(event) {
+  event.preventDefault();
+  let animals = 'https://opentdb.com/api.php?amount=20&category=20&type=multiple';
+  $.ajax({
+    url: animals,
+    method: "GET"
+  }).then(function(response) {
+    console.log(response);
+
+    $('#question12').text(response.results[3].question);
+    $('#divA').text(response.results[0].correct_answer);
+    $('#divB').text(response.results[0].incorrect_answers[0]);
+    $('#divC').text(response.results[0].incorrect_answers[1]);
+    $('#divD').text(response.results[0].incorrect_answers[2]);
+
+    choice(response);
+
+  });
+});
+
+// GLOBAL SCORE
+let score = 0;
+
+function choice (response) {
+  let answer= response.results[0].correct_answer;
+  console.log(answer)
+  
+  $(".btnA").on("click", (e) => {
+
+    let value = e.target.getAttribute("data-value");
+      console.log(value);
+
+    let choices =[
+     response.results[0].correct_answer,
+     response.results[0].incorrect_answers[0],
+     response.results[0].incorrect_answers[1],
+     response.results[0].incorrect_answers[2]
+     ]
+
+     console.log(choices)
+
+     for(let i = 0; i < choices.length; i++){
+       
+      console.log(choices[i])
+
+      if (choices[i] == answer)
+     {
+        //score = score + value;
+        score++;
+        alert("Correct");
+        document.getElementById("score") = score + value;
+      }
+      else
+      {   
+        //score = score - value;
+        score--;
+        alert("Incorrect");
+        document.getElementById("score") = score - value;
+        
+      }
+     }
+    
+    })
+}

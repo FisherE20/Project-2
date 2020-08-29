@@ -58,7 +58,10 @@ module.exports = function(app) {
     {attributes: ['id', 'email','username']}
     ).then(response => {
       res.send(response)
-    })
+    });
     
-  })
+  });
+
+ 
+
 };

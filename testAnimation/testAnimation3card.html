@@ -9,266 +9,300 @@
 </head>
 
 <body>
-    <div class="container">
-        <!-- coloumn1-->
-        <div class="row">
-            <!-- card1-->
-            <div class="card">
-                <div class="face face1">
-                    <img src="../front-end/images/img1.JPG">
-                </div>
-                <div class="face face2">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus.</p>
-                    <div class="answers">
-                        <button>David Dawkins</button>
-                        <button>11/59/03</button>
-                        <button>Not Another Teen Movie</button>
-                        <button>lizards</button>
-                    </div>
-                </div>
+
+
+    <!-- coloumn1-->
+    <div>
+        <p>A:<span id="divA" class="choices"></span></p>
+        <p>B:<span id="divB" class="choices2"></span></p>
+        <p>C:<span id="divC" class="choices3"></span></p>
+        <p>D:<span id="divD" class="choices4"></span></p>
+    </div>
+    
+    <div class="row">
+
+        <!-- card1 category-->
+        <div class="card">
+            <div class="face face1" id="cat1">
+                <img src="../front-end/images/img1.JPG">
+                
             </div>
-            <!-- card2-->
-            <div class="card">
-                <div class="face face1">
-                    <img src="../front-end/images/img1.JPG">
-                </div>
-                <div class="face face2">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus.</p>
-                    <div class="answers">
-                        <button>Lord Of The Rings</button>
-                        <button>horses</button>
-                        <button>Mr. T</button>
-                        <button>$1,255,072.00</button>
-                    </div>
-                </div>
+            <div class="face face2">
+                <h1 id="category1"></h1>
+                
             </div>
-            <!-- card3-->
-            <div class="card">
-                <div class="face face1">
-                    <img src="../front-end/images/img1.JPG">
-                </div>
-                <div class="face face2">
-                    <p>Aenean id augue quis ante pharetra aliquam in at turpis.</p>
-                    <div class="answers">
-                        <button>Pikachu</button>
-                        <button>Playstation 5</button>
-                        <button>November 20, 2020</button>
-                        <button>All the Above</button>
-                    </div>
-                </div>
+        </div>
+        <!-- card2 -->
+        <div class="card">
+            <div class="face face1" id="box1" data-value="100">
+                <img src="../front-end/images/img1.JPG">
+                <h1>$100</h1>
             </div>
-            <br>
-            <div class="card">
-                <div class="face face1">
-                    <img src="../front-end/images/img1.JPG">
+            <div class="face face2">
+                <p id="question"></p>
+                <div class="answers">
+                    <button class="btn" data-value="100" id="btnA">A</button>
+                    <button class="btn" data-value="-100" id="btnB">B</button>
+                    <button class="btn" data-value="-100" id="btnC">C</button>
+                    <button class="btn" data-value="-100" id="btnD">D</button>
+
                 </div>
-                <div class="face face2">
-                    <p>Nam lacinia vitae risus ac cursus. Sed vestibulum pharetra ex sed aliquet.</p>
-                    <div class="answers">
-                        <button>January 20, 1990</button>
-                        <button>November 20, 1859</button>
-                        <button>April 1, 1957</button>
-                        <button>September 11, 2020</button>
-                    </div>
+                
+            </div>
+
+        </div>
+        <!-- card3 -->
+        <div class="card">
+            <div class="face face1" id="box2" >
+                <img src="../front-end/images/img1.JPG">
+                <h1>$200</h1>
+            </div>
+            <div class="face face2">
+                <p id="question2"></p>
+                <div class="answers">
+                    <button class="btn" data-value="-200" id="btnE">A</button>
+                    <button class="btn" data-value="-200" id="btnF">B</button>
+                    <button class="btn" data-value="200" id="btnG">C</button>
+                    <button class="btn" data-value="-200" id="btnH">D</button>
+
                 </div>
+              
+            </div>
+
+        </div>
+        <br>
+        <!-- card4 -->
+        <div class="card">
+            <div class="face face1" id="box3" >
+                <img src="../front-end/images/img1.JPG">
+                <h1>$300</h1>
+            </div>
+            <div class="face face2">
+                <p id="question3"></p>
+                <div class="answers">
+                    <button class="btn" data-value="-300" id="btnI">A</button>
+                    <button class="btn" data-value="-300" id="btnJ">B</button>
+                    <button class="btn" data-value="300" id="btnK">C</button>
+                    <button class="btn" data-value="-300" id="btnL">D</button>
+
+                </div>
+                
+
             </div>
         </div>
 
-        <!-- coloumn2-->
-        <div class="row">
-            <!-- card1-->
-            <div class="card">
-                <div class="face face1">
-                    <img src="../front-end/images/img2.JPG">
-                </div>
-                <div class="face face2">
-                    <p>Proin eget tortor blandit, tincidunt nisi et, consectetur odio.</p>
-                    <div class="answers">
-                        <button>{{Answer:A}}</button>
-                        <button>{{Answer:B}}</button>
-                        <button>{{Answer:C}}</button>
-                        <button>{{Answer:D}}</button>
-                    </div>
-                </div>
+
+    <!-- coloumn2-->
+
+    <!-- card5-->
+    <div class="row">
+        <div class="card">
+            <div class="face face1" id="cat2" >
+                <img src="../front-end/images/img2.JPG">
+                
             </div>
-            <!-- card2-->
-            <div class="card">
-                <div class="face face1">
-                    <img src="../front-end/images/img2.JPG">
-                </div>
-                <div class="face face2">
-                    <h3>Question Content</h3>
-                    <p>Question</p>
-                    <div class="answers">
-                        <button>{{Answer:A}}</button>
-                        <button>{{Answer:B}}</button>
-                        <button>{{Answer:C}}</button>
-                        <button>{{Answer:D}}</button>
-                    </div>
-                </div>
+            <div class="face face2">
+                <h1 id="category2"></h1>
+                
             </div>
-            <!-- card3-->
-            <div class="card">
-                <div class="face face1">
-                    <img src="../front-end/images/img2.JPG">
-                </div>
-                <div class="face face2">
-                    <h3>Question Content</h3>
-                    <p>Question</p>
-                    <div class="answers">
-                        <button>{{Answer:A}}</button>
-                        <button>{{Answer:B}}</button>
-                        <button>{{Answer:C}}</button>
-                        <button>{{Answer:D}}</button>
-                    </div>
-                </div>
+        </div>
+    <!-- card6-->
+        <div class="card">
+            <div class="face face1" id="box4" data-value="100">
+                <img src="../front-end/images/img2.JPG">
+                <h1>$100</h1>
             </div>
-            <!-- card4-->
-            <div class="card">
-                <div class="face face1">
-                    <img src="../front-end/images/img2.JPG">
-                </div>
-                <div class="face face2">
-                    <h3>Question Content</h3>
-                    <p>Question</p>
-                    <div class="answers">
-                        <button>{{Answer:A}}</button>
-                        <button>{{Answer:B}}</button>
-                        <button>{{Answer:C}}</button>
-                        <button>{{Answer:D}}</button>
-                    </div>
+            <div class="face face2">
+                <p id="question4"></p>
+                <div class="answers">
+                    <button class="btn" data-value="-100" id="btnM">A</button>
+                    <button class="btn" data-value="-100" id="btnN">B</button>
+                    <button class="btn" data-value="-100" id="btnO">C</button>
+                    <button class="btn" data-value="100" id="btnP">D</button>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="card">
-                <div class="face face1">
-                    <img src="../front-end/images/img3.JPG">
-                </div>
-                <div class="face face2">
-                    <h3>Question Content</h3>
-                    <p>Question</p>
-                    <div class="answers">
-                        <button>{{Answer:A}}</button>
-                        <button>{{Answer:B}}</button>
-                        <button>{{Answer:C}}</button>
-                        <button>{{Answer:D}}</button>
-                    </div>
-                </div>
+    <!-- card7-->
+        <div class="card">
+            <div class="face face1" id="box5" >
+                <img src="../front-end/images/img2.JPG">
+                <h1>$200</h1>
             </div>
+            <div class="face face2">
+                <p id="question5"></p>
+                <div class="answers">
+                    <button class="btn" data-value="-200" id="btnQ">A</button>
+                    <button class="btn" data-value="200" id="btnR">B</button>
+                    <button class="btn" data-value="-200" id="btnS">C</button>
+                    <button class="btn" data-value="-200" id="btnT">D</button>
 
-            <!-- coloumn3-->
-            <div class="card">
-                <div class="face face1">
-                    <img src="../front-end/images/img3.JPG">
-                </div>
-                <div class="face face2">
-                    <h3>Question Content</h3>
-                    <p>Question</p>
-                    <div class="answers">
-                        <button>{{Answer:A}}</button>
-                        <button>{{Answer:B}}</button>
-                        <button>{{Answer:C}}</button>
-                        <button>{{Answer:D}}</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="face face1">
-                    <img src="../front-end/images/img2.JPG">
-                </div>
-                <div class="face face2">
-                    <h3>Question Content</h3>
-                    <p>Question</p>
-                    <div class="answers">
-                        <button>{{Answer:A}}</button>
-                        <button>{{Answer:B}}</button>
-                        <button>{{Answer:C}}</button>
-                        <button>{{Answer:D}}</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="face face1">
-                    <img src="../front-end/images/img3.JPG">
-                </div>
-                <div class="face face2">
-                    <h3>Question Content</h3>
-                    <p>Question</p>
-                    <div class="answers">
-                        <button>{{Answer:A}}</button>
-                        <button>{{Answer:B}}</button>
-                        <button>{{Answer:C}}</button>
-                        <button>{{Answer:D}}</button>
-                    </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="card">
-                <div class="face face1">
-                    <img src="../front-end/images/img1.JPG">
-                </div>
-                <div class="face face2">
-                    <h3>Question Content</h3>
-                    <p>Question</p>
-                    <div class="answers">
-                        <button>{{Answer:A}}</button>
-                        <button>{{Answer:B}}</button>
-                        <button>{{Answer:C}}</button>
-                        <button>{{Answer:D}}</button>
-                    </div>
-                </div>
-            </div>
+        <br>
 
-            <!-- coloumn4-->
-            <div class="card">
-                <div class="face face1">
-                    <img src="../front-end/images/img1.JPG">
-                </div>
-                <div class="face face2">
-                    <h3>Question Content</h3>
-                    <p>Question</p>
-                    <div class="answers">
-                        <button>{{Answer:A}}</button>
-                        <button>{{Answer:B}}</button>
-                        <button>{{Answer:C}}</button>
-                        <button>{{Answer:D}}</button>
-                    </div>
-                </div>
+    <!-- card8-->
+        <div class="card">
+            <div class="face face1" id="box6"  >
+                <img src="../front-end/images/img2.JPG">
+                <h1>$300</h1>
             </div>
-            <div class="card">
-                <div class="face face1">
-                    <img src="../front-end/images/img2.JPG">
-                </div>
-                <div class="face face2">
-                    <h3>Question Content</h3>
-                    <p>Question</p>
-                    <div class="answers">
-                        <button>{{Answer:A}}</button>
-                        <button>{{Answer:B}}</button>
-                        <button>{{Answer:C}}</button>
-                        <button>{{Answer:D}}</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="face face1">
-                    <img src="../front-end/images/img1.JPG">
-                </div>
-                <div class="face face2">
-                    <h3>Question Content</h3>
-                    <p>Question</p>
-                    <div class="answers">
-                        <button>{{Answer:A}}</button>
-                        <button>{{Answer:B}}</button>
-                        <button>{{Answer:C}}</button>
-                        <button>{{Answer:D}}</button>
-                    </div>
+            <div class="face face2">
+                <p id="question6" data-value="100"></p>
+                <div class="answers">
+                    <button class="btn" data-value="300" id="btnU">A</button>
+                    <button class="btn" data-value="300" id="btnV">B</button>
+                    <button class="btn" data-value="-300" id="btnW">C</button>
+                    <button class="btn" data-value="300" id="btnX">D</button>
+
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- card9-->
+    <div class="row">
+        <div class="card">
+            <div class="face face1" id="cat3">
+                <img src="../front-end/images/img3.JPG">
+                
+            </div>
+            <div class="face face2">
+                <h1 id="category3"></h1>
+                
+
+
+            </div>
+
+
+        <!-- coloumn3-->
+
+    <!-- card10-->
+        <div class="card">
+            <div class="face face1" id="box7">
+                <img src="../front-end/images/img3.JPG">
+                <h1>$100</h1>
+            </div>
+            <div class="face face2">
+                <p id="question7"></p>
+                <div class="answers">
+                    <button class="btn" data-value="-100" id="btnY">A</button>
+                    <button class="btn" data-value="-100" id="btnZ">B</button>
+                    <button class="btn" data-value="100" id="btnAA">C</button>
+                    <button class="btn" data-value="-100" id="btnBB">D</button>
+                </div>
+            </div>
+        </div>
+    <!-- card11-->
+        <div class="card">
+            <div class="face face1" id="box8" >
+                <img src="../front-end/images/img2.JPG">
+                <h1>$200</h1>
+            </div>
+            <div class="face face2">
+                <p id="question8"></p>
+                <div class="answers">
+                    <button class="btn" data-value="200" id="btnCC">A</button>
+                    <button class="btn" data-value="-200" id="btnDD">B</button>
+                    <button class="btn" data-value="-200" id="btnEE">C</button>
+                    <button class="btn" data-value="-200" id="btnFF">D</button>
+                </div>
+            </div>
+        </div>
+    <!-- card12-->
+        <div class="card">
+            <div class="face face1" id="box9">
+                <img src="../front-end/images/img3.JPG">
+                <h1>$300</h1>
+            </div>
+            <div class="face face2">
+                <p id="question9"></p>
+                <div class="answers">
+                    <button class="btn" data-value="-300" id="btnGG">A</button>
+                    <button class="btn" data-value="-300" id="btnHH">B</button>
+                    <button class="btn" data-value="-300" id="btnII">C</button>
+                    <button class="btn" data-value="300"  id="btnJJ">D</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- card13-->
+    <div class="row">
+        <div class="card">
+            <div class="face face1" id="cat4">
+                <img src="../front-end/images/img1.JPG">
+                
+            </div>
+            <div class="face face2">
+                <h1 id="category4"></h1>
+                
+
+
+            </div>
+
+
+        <!-- coloumn4-->
+
+    <!-- card14-->
+        <div class="card">
+            <div class="face face1" id="box10">
+                <img src="../front-end/images/img1.JPG">
+                <h1>$100</h1>
+            </div>
+            <div class="face face2">
+                <p id="question10"></p>
+                <div class="answers">
+                    <button class="btn" data-value="-100" id="btnKK">A</button>
+                    <button class="btn" data-value="-100" id="btnLL">B</button>
+                    <button class="btn" data-value="-100" id="btnMM">C</button>
+                    <button class="btn" data-value="100" id="btnNN">D</button>
+                </div>
+                
+                
+            </div>
+        </div>
+    <!-- card15-->
+        <div class="card">
+            <div class="face face1" id="box11">
+                <img src="../front-end/images/img2.JPG">
+                <h1>$200</h1>
+            </div>
+            <div class="face face2">
+                <p id="question11"></p>
+                <div class="answers">
+                    <button class="btn" data-value="-200" id="btnOO">A</button>
+                    <button class="btn" data-value="-200" id="btnPP">B</button>
+                    <button class="btn" data-value="-200" id="btnQQ">C</button>
+                    <button class="btn" data-value="200" id="btnRR">D</button>
+                </div>
+            </div>
+        </div>
+    <!-- card16-->
+        <div class="card">
+            <div class="face face1" id="box12">
+                <img src="../front-end/images/img1.JPG">
+                <h1>$300</h1>
+            </div>
+            <div class="face face2" >
+                <p id="question12"></p>
+                <div class="answers">
+                    <button class="btn" data-value="300" id="btnSS">A</button>
+                    <button class="btn" data-value="-300" id="btnTT">B</button>
+                    <button class="btn" data-value="-300" id="btnUU">C</button>
+                    <button class="btn" data-value="-300" id="btnVV">D</button>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../public/js/trivia-api.js"></script>
+
+
 </body>
 
 </html>

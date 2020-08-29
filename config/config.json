@@ -2,10 +2,8 @@
     "development": {
         "username": "root",
 
-        "password": "done",
 
-
-
+        "password": "null",
 
 
         "database": "passport_demo",
