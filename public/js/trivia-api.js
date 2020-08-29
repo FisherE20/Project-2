@@ -291,14 +291,22 @@ let score = 500;
 $("#score").text(score)
 
 function choice () {
-  $(".correct").on('click', () =>{
+  
+  $(".correct").on('click', (event) =>{
 
+    event.stopPropagation();
     alert("correct")
+    
     score++
+    $("#score").text(score)
   })
   
-  $(".incorrect").on("click", () =>{
+  $(".incorrect").on("click", (event) =>{
+
+    event.stopPropagation();
     alert("Incorrect")
     score--
+    
+    $("#score").text(score)
   })
 }
