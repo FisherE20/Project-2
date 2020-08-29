@@ -245,7 +245,7 @@ $("#box10").on("mouseover", function(event) {
     choice(response);
 
   })
-});
+ });
 
 $("#box11").on("mouseover", function(event) {
   event.preventDefault();
@@ -295,6 +295,19 @@ function choice (response) {
   
   $(".btnA").on("click", (e) => {
 
+
+
+    let choices = $(".choices").text()
+
+    // let rightChoice = choices.match(answer)
+    // console.log(rightChoice)
+    // let thisOne = rightChoice
+    // console.log(thisOne + "this is the new one ")
+    let value = e.target.getAttribute("data-value");
+      console.log(value);
+    
+    if (choices != answer)
+
     let value = e.target.getAttribute("data-value");
       console.log(value);
 
@@ -312,6 +325,7 @@ function choice (response) {
       console.log(choices[i])
 
       if (choices[i] == answer)
+
      {
         //score = score + value;
         score++;
@@ -326,7 +340,8 @@ function choice (response) {
         document.getElementById("score") = score - value;
         
       }
-     }
-    
+
+      console.log(score);
+
     })
 }

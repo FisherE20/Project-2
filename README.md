@@ -1,6 +1,6 @@
 # COVID Trivia Night
 
-![Project Image](project-image-url)
+![Project Image](/public/images/start.png)
 
 >Trivia Night!! Your computer or mine?
 
