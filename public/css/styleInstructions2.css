@@ -15,8 +15,15 @@ body {
     background: #111;
 }
 
+.container {
+    font-family: 'Special Elite', cursive;
+    margin: 20px;
+    padding: 10px;
+}
+
 .card {
     position: relative;
+    margin: auto 0;
     width: 400px;
     height: 300px;
     transform-style: preserve-3d;

@@ -119,14 +119,14 @@ body {
 }
 
 .r {
-    left: -110%;
+    left: 10%;
     top: 15%;
     font-size: 4rem;
     color: orangered;
 }
 
 .i {
-    left: -10%;
+    left: 10%;
     top: 25%;
     font-size: 4rem;
     color: orangered;
@@ -140,14 +140,14 @@ body {
 }
 
 .y {
-    left: -10%;
+    left: 10%;
     top: 55%;
     font-size: 4rem;
     color: orangered;
 }
 
 .a {
-    left: -80%;
+    left: 10%;
     top: 70%;
     font-size: 4rem;
     color: orangered;

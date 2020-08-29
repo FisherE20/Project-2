@@ -6,6 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: #111;
 }
 
 img {
@@ -25,12 +26,19 @@ button {
     width: 100px;
 }
 
-.answers {}
+.container {
+    width: 95vw;
+    height: 100vh;
+    display: flex;
+    flex: row;
+    align-items: center;
+    align-content: center;
+}
 
 .card {
     position: relative;
     width: 200px;
-    height: 75px;
+    height: 100px;
     flex-direction: row;
     margin: 5px;
     margin-bottom: 20px;
@@ -117,6 +125,82 @@ button {
     flex-direction: column;
 }
 
+
+/*showDisplay*/
+
+.extra {
+    display: flex;
+    flex: center;
+    flex-direction: column;
+}
+
+.answerDisplay {
+    background: #fff;
+    border: 3px solid blue;
+    width: 175px;
+    height: 100px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.timerDisplay {
+    background: #fff;
+    border: 3px solid blue;
+    width: 100px;
+    height: 75px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.scoreDisplay {
+    background: #fff;
+    border: 3px solid blue;
+    width: 100px;
+    height: 75px;
+    margin: 10px;
+    padding: 5px;
+}
+
 .button {
     border-radius: 50px;
+}
+
+.shadow {
+    position: relative;
+    margin: 0;
+    width: 95vw;
+    height: 80vh;
+    background: linear-gradient(0deg, rgb(0, 0, 0), rgb(38, 38, 38));
+}
+
+.shadow:before,
+.shadow:after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(45deg, #eb3e3e, #0000ff, #ffae00, #f0f0c4, #aa1cce, #eb3e3e, #0000ff, #ffae00, #f0f0c4, #aa1cce);
+    /*othercolorway*/
+    /*background: linear-gradient(45deg, #eb3e3e, #0000ff, #ffae00, #f0f0c4, #aa1cce, #eb3e3e, #0000ff, #ffae00, #f0f0c4, #aa1cce);*/
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: animateBorder 20s linear infinite;
+}
+
+.shadow:after {
+    filter: blur(10px);
+}
+
+@keyframes animateBorder {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
 }
