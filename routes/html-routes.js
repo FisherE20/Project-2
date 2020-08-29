@@ -15,7 +15,7 @@ module.exports = function(app) {
         if (req.user) {
             res.redirect("/members");
         }
-        res.render("login",);
+        res.render("login", );
     });
 
     // Here we've add our isAuthenticated middleware to this route.
@@ -34,7 +34,7 @@ module.exports = function(app) {
         }
 
         res.render("trivia")
-        
+
     })
 
     // Highcore Html Route
@@ -46,9 +46,9 @@ module.exports = function(app) {
         res.render("highscore", { style: "styleForm.css" })
     })
 
-    app.get("/how",(req,res) => {
+    app.get("/how", (req, res) => {
         res.render("howto")
     })
-      
+
 
 };
