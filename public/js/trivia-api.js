@@ -215,7 +215,7 @@ $("#box10").on("mouseover", function(event) {
     $('#btnMM').text(response.results[0].incorrect_answers[1]);
     $('#btnNN').text(response.results[0].incorrect_answers[2]);
   })
-});
+ });
 
 $("#box11").on("mouseover", function(event) {
   event.preventDefault();
@@ -230,6 +230,8 @@ $("#box11").on("mouseover", function(event) {
     $('#btnPP').text(response.results[0].incorrect_answers[1]);
     $('#btnQQ').text(response.results[0].incorrect_answers[2]);
     $('#btnRR').text(response.results[0].correct_answer);
+    
+
   })
 });
 
@@ -246,17 +248,13 @@ $("#box12").on("mouseover", function(event) {
     $('#btnTT').text(response.results[0].incorrect_answers[0]);
     $('#btnUU').text(response.results[0].incorrect_answers[1]);
     $('#btnVV').text(response.results[0].incorrect_answers[2]);
-  });
-});
+    let score = 0;
+    let answer= response.results[0].correct_answer;
 
-// scoring
- let score = 0;
- let answer= correct_answer;
-
-// when you click on the face card 2 you will get the point value
-// can you add another on click to the answer button with a data attribute
-//  of correct or incorect
-$(".btn").on("click", (e) => {
+    // when you click on the face card 2 you will get the point value
+    // can you add another on click to the answer button with a data attribute
+    //  of correct or incorect
+    $(".btn").on("click", (e) => {
   
   let value = e.target.getAttribute("data-value");
    console.log(value);
@@ -279,3 +277,36 @@ else
 
 });
 
+   
+  });
+});
+
+// // scoring
+//  let score = 0;
+//  let answer= correct_answer;
+
+// // when you click on the face card 2 you will get the point value
+// // can you add another on click to the answer button with a data attribute
+// //  of correct or incorect
+// $(".btn").on("click", (e) => {
+  
+//   let value = e.target.getAttribute("data-value");
+//    console.log(value);
+
+//    if (answer.correct === answer)
+//   {
+//     //score = score + value;
+//     score++;
+//     alert("Correct");
+//     document.getElementById("score") = score + value;
+// }
+// else
+// {   
+//     //score = score - value;
+//     score--;
+//     alert("Incorrect");
+//     document.getElementById("score") = score - value;
+    
+// }
+
+// });
