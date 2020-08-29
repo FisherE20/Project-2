@@ -25,7 +25,8 @@ With COVID still previlent and people still quarentining. We wanted an applicati
 - Sequelize
 - Sass
 - Passport
-
+- BCRYPT.JS
+- ScetchJS
 ---
 
 ## How To Use
@@ -45,7 +46,7 @@ With COVID still previlent and people still quarentining. We wanted an applicati
 
 ## References
 
-- HEROKU - [Heroku](url)
+- HEROKU - [Heroku](https://thawing-everglades-24119.herokuapp.com/)
 
 [Back To The Top](#COVID-Trivia-Night)
 
