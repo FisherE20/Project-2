@@ -1,3 +1,4 @@
+
 $("#cat1").on("mouseover", function(event) {
   event.preventDefault();
   let sports = 'https://opentdb.com/api_category.php';
@@ -65,7 +66,7 @@ $("#box1").on("mouseover",function(event) {
     $('#divC').text(response.results[0].correct_answer);
     $('#divD').text(response.results[0].incorrect_answers[2]);
 
-    choice(response);
+    choice();
 
 
   })
@@ -87,7 +88,7 @@ $("#box2").on("mouseover", function(event) {
     $('#divC').text(response.results[0].incorrect_answers[1]);
     $('#divD').text(response.results[0].incorrect_answers[2]);
 
-    choice(response);
+    choice();
 
   })
 });
@@ -106,7 +107,7 @@ $("#box3").on("mouseover", function(event) {
     $('#divC').text(response.results[0].correct_answer);
     $('#divD').text(response.results[0].incorrect_answers[2]);
 
-    choice(response);
+    choice();
 
   })
 });
@@ -125,7 +126,7 @@ $("#box4").on("mouseover", function(event) {
     $('#divC').text(response.results[0].incorrect_answers[2]);
     $('#divD').text(response.results[0].correct_answer);
 
-    choice(response);
+    choice();
 
   })
 });
@@ -144,7 +145,7 @@ $("#box5").on("mouseover", function(event) {
     $('#divC').text(response.results[0].incorrect_answers[1]);
     $('#divD').text(response.results[0].incorrect_answers[2]);
 
-    choice(response);
+    choice();
 
   })
 });
@@ -163,8 +164,7 @@ $("#box6").on("mouseover", function(event) {
     $('#divC').text(response.results[0].incorrect_answers[2]);
     $('#divD').text(response.results[0].correct_answer);
 
-    choice(response);
-
+    choice();
   })
 });
 
@@ -185,7 +185,7 @@ $("#box7").on("mouseover", function(event) {
     $('#divC').text(response.results[0].correct_answer);
     $('#divD').text(response.results[0].incorrect_answers[2]);
 
-    choice(response);
+    choice();
 
   })
 });
@@ -204,7 +204,7 @@ let animals = 'https://opentdb.com/api.php?amount=20&category=17&type=multiple';
     $('#divC').text(response.results[0].incorrect_answers[1]);
     $('#divD').text(response.results[0].incorrect_answers[2]);
 
-    choice(response);
+    choice();
 
   })
 });
@@ -223,7 +223,7 @@ $("#box9").on("mouseover", function(event) {
     $('#divC').text(response.results[0].incorrect_answers[2]);
     $('#divD').text(response.results[0].correct_answer);
 
-    choice(response);
+    choice();
 
   })
 });
@@ -242,7 +242,7 @@ $("#box10").on("mouseover", function(event) {
     $('#divC').text(response.results[0].incorrect_answers[1]);
     $('#divD').text(response.results[0].incorrect_answers[2]);
 
-    choice(response);
+    choice();
 
   })
  });
@@ -261,7 +261,7 @@ $("#box11").on("mouseover", function(event) {
     $('#divC').text(response.results[0].incorrect_answers[2]);
     $('#divD').text(response.results[0].correct_answer);
 
-    choice(response);
+    choice();
 
   })
 });
@@ -281,67 +281,32 @@ $("#box12").on("mouseover", function(event) {
     $('#divC').text(response.results[0].incorrect_answers[1]);
     $('#divD').text(response.results[0].incorrect_answers[2]);
 
-    choice(response);
-
+    choice();
   });
 });
 
 // GLOBAL SCORE
-let score = 0;
+let score = 500;
 
-function choice (response) {
-  let answer= response.results[0].correct_answer;
-  console.log(answer)
+$("#score").text(score)
+
+function choice () {
   
-  $(".btnA").on("click", (e) => {
+  $(".correct").on('click', (event) =>{
 
-
-
-    let choices = $(".choices").text()
-
-    // let rightChoice = choices.match(answer)
-    // console.log(rightChoice)
-    // let thisOne = rightChoice
-    // console.log(thisOne + "this is the new one ")
-    let value = e.target.getAttribute("data-value");
-      console.log(value);
+    event.stopPropagation();
+    alert("correct")
     
-    if (choices != answer)
+    score++
+    $("#score").text(score)
+  })
+  
+  $(".incorrect").on("click", (event) =>{
 
-    let value = e.target.getAttribute("data-value");
-      console.log(value);
-
-    let choices =[
-     response.results[0].correct_answer,
-     response.results[0].incorrect_answers[0],
-     response.results[0].incorrect_answers[1],
-     response.results[0].incorrect_answers[2]
-     ]
-
-     console.log(choices)
-
-     for(let i = 0; i < choices.length; i++){
-       
-      console.log(choices[i])
-
-      if (choices[i] == answer)
-
-     {
-        //score = score + value;
-        score++;
-        alert("Correct");
-        document.getElementById("score") = score + value;
-      }
-      else
-      {   
-        //score = score - value;
-        score--;
-        alert("Incorrect");
-        document.getElementById("score") = score - value;
-        
-      }
-
-      console.log(score);
-
-    })
+    event.stopPropagation();
+    alert("Incorrect")
+    score--
+    
+    $("#score").text(score)
+  })
 }

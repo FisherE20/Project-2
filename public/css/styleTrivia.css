@@ -24,6 +24,7 @@ img {
 button {
     font-size: 10px;
     width: 100px;
+    color: black;
 }
 
 .container {
@@ -163,6 +164,11 @@ button {
 
 .button {
     border-radius: 50px;
+}
+
+.answers {
+    font-size: larger;
+    color: white;
 }
 
 .shadow {
