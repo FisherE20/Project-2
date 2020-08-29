@@ -293,7 +293,8 @@ function choice (response) {
   let answer= response.results[0].correct_answer;
   console.log(answer)
   
-  $(".btn").on("click", (e) => {
+  $(".btnA").on("click", (e) => {
+
 
 
     let choices = $(".choices").text()
@@ -306,6 +307,25 @@ function choice (response) {
       console.log(value);
     
     if (choices != answer)
+
+    let value = e.target.getAttribute("data-value");
+      console.log(value);
+
+    let choices =[
+     response.results[0].correct_answer,
+     response.results[0].incorrect_answers[0],
+     response.results[0].incorrect_answers[1],
+     response.results[0].incorrect_answers[2]
+     ]
+
+     console.log(choices)
+
+     for(let i = 0; i < choices.length; i++){
+       
+      console.log(choices[i])
+
+      if (choices[i] == answer)
+
      {
         //score = score + value;
         score++;
@@ -320,6 +340,8 @@ function choice (response) {
         document.getElementById("score") = score - value;
         
       }
+
       console.log(score);
+
     })
 }
