@@ -25,6 +25,11 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
+// adding compression to project
+const compression = require("compression")
+app.use(compression({ filter: shouldCompress }))
+
+
 // Requiring our routes
 require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
